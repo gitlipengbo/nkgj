@@ -1,0 +1,429 @@
+[ 2018-05-03T17:37:04+08:00 ] 49.90.62.197 /index.php/portal/index/tongyi
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000379s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000133s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001002s ]
+NOTIC: [8] Undefined index: uid /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 20 行.
+NOTIC: [8] Undefined index: token /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 23 行.
+NOTIC: [8] Undefined index: code /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `jz_all_record` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jz_options` [ RunTime:0.0003s ]
+SQL: SELECT `option_value` FROM `jz_options` WHERE `option_name` = 'bonus' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jz_user` WHERE `id` = 97179 LIMIT 1   [ RunTime:0.0003s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000353s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000372s ]
+
+[ 2018-05-03T17:37:04+08:00 ] 49.90.62.197 /portal/index/room.html?room=5710&from=groupmessage&isappinstalled=0&code=081P5O3G0VDbcl2InZ0G00xD3G0P5O3R&state=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000358s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000149s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001004s ]
+NOTIC: [8] Undefined index: uid /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 20 行.
+NOTIC: [8] Undefined index: token /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `jz_all_record` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jz_options` [ RunTime:0.0003s ]
+SQL: SELECT `option_value` FROM `jz_options` WHERE `option_name` = 'bonus' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jz_user` WHERE `id` = 97179 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.0004s ]
+SQL: UPDATE `jz_user` SET `token`='60273377841ce768c6905e0159236daa' WHERE `id` = 97179 [ RunTime:0.0047s ]
+SQL: SHOW COLUMNS FROM `jz_room` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jz_room` WHERE `id` = 5710 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_user` WHERE `id` = 104922 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jz_qun` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jz_qun` WHERE `open` = 104922  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: sz /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 132 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 132 行.
+NOTIC: [8] Undefined index: sx /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 133 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 133 行.
+NOTIC: [8] Undefined index: cm /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 134 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 134 行.
+NOTIC: [8] Undefined index: px /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 138 行.
+NOTIC: [8] Undefined index: px /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 138 行.
+NOTIC: [8] Undefined index: px /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 138 行.
+NOTIC: [8] Undefined index: gz2 /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 144 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000080s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000096s ]
+NOTIC: [8] Undefined index: px /www/wwwroot/nkgj.qincin.com/data/runtime/Cache/Portal/0314eb22549bc261bd09a1e043e65573.php 第 91 行.
+SQL: SELECT * FROM `jz_user` WHERE `id` = 104922 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jz_user_room` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jz_user_room` WHERE `uid` = 97179 AND `type` = 1 LIMIT 1   [ RunTime:0.0029s ]
+SQL: SELECT * FROM `jz_user_room` WHERE `uid` = 97179 AND `type` = 1 ORDER BY jifen desc LIMIT 1   [ RunTime:0.0029s ]
+NOTIC: [8] Undefined index: px /www/wwwroot/nkgj.qincin.com/data/runtime/Cache/Portal/0314eb22549bc261bd09a1e043e65573.php 第 324 行.
+NOTIC: [8] Undefined variable: indexxx /www/wwwroot/nkgj.qincin.com/data/runtime/Cache/Portal/0314eb22549bc261bd09a1e043e65573.php 第 338 行.
+SQL: SELECT * FROM `jz_user` WHERE `id` = 104922 LIMIT 1   [ RunTime:0.0001s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013148s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013161s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000183s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000149s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000312s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000328s ]
+
+[ 2018-05-03T17:37:04+08:00 ] 49.90.62.197 /index.php/portal/index/getconfig/?url=http%3A%2F%2Fnkgj.tukupi.cn%2Fportal%2Findex%2Froom.html%3Froom%3D5710%26from%3Dgroupmessage%26isappinstalled%3D0%26code%3D081P5O3G0VDbcl2InZ0G00xD3G0P5O3R%26state%3D123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000354s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000132s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: uid /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 20 行.
+NOTIC: [8] Undefined index: token /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 23 行.
+NOTIC: [8] Undefined index: code /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `jz_all_record` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jz_options` [ RunTime:0.0003s ]
+SQL: SELECT `option_value` FROM `jz_options` WHERE `option_name` = 'bonus' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jz_user` WHERE `id` = 97179 LIMIT 1   [ RunTime:0.0003s ]
+NOTIC: [8] Use of undefined constant weixin_appid - assumed 'weixin_appid' /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 40 行.
+NOTIC: [8] Use of undefined constant weixin_key - assumed 'weixin_key' /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 40 行.
+NOTIC: [8] Use of undefined constant access_token - assumed 'access_token' /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 40 行.
+NOTIC: [8] Use of undefined constant weixin_appid - assumed 'weixin_appid' /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 42 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000330s ]
+
+[ 2018-05-03T17:37:14+08:00 ] 183.192.201.97 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000360s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000128s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+NOTIC: [8] Undefined index: uid /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 20 行.
+NOTIC: [8] Undefined index: token /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 23 行.
+NOTIC: [8] Undefined index: uid /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: code /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 33 行.
+
+[ 2018-05-03T17:37:14+08:00 ] 61.151.207.252 /portal/index/room.html?room=5714&from=groupmessage
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000283s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000387s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001007s ]
+NOTIC: [8] Undefined index: uid /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 20 行.
+NOTIC: [8] Undefined index: token /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 23 行.
+NOTIC: [8] Undefined index: uid /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: code /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 33 行.
+
+[ 2018-05-03T17:37:14+08:00 ] 223.167.152.20 /
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000270s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000398s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001004s ]
+NOTIC: [8] Undefined index: uid /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 20 行.
+NOTIC: [8] Undefined index: token /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 23 行.
+NOTIC: [8] Undefined index: uid /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: code /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 33 行.
+
+[ 2018-05-03T17:37:15+08:00 ] 61.151.207.252 /portal/index/room.html?room=5714&from=groupmessage&code=011DfNcp1nAK8p0ki9ap1IpMcp1DfNc-&state=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000345s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000132s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000987s ]
+NOTIC: [8] Undefined index: uid /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 20 行.
+NOTIC: [8] Undefined index: token /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 23 行.
+NOTIC: [8] Undefined index: uid /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: uid /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 40 行.
+NOTIC: [8] Use of undefined constant weixin_appid - assumed 'weixin_appid' /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 43 行.
+NOTIC: [8] Use of undefined constant weixin_key - assumed 'weixin_key' /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 43 行.
+NOTIC: [8] Use of undefined constant access_token - assumed 'access_token' /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jz_user` WHERE `openid` = 'otNJs1s87j9v7R-10sy0wK0x4WZ8' LIMIT 1   [ RunTime:0.0011s ]
+SQL: UPDATE `jz_user` SET `openid`='otNJs1s87j9v7R-10sy0wK0x4WZ8',`last_login_ip`='117.136.50.196',`last_time`='2018-05-03 17:37:15' WHERE `id` = 86304 [ RunTime:0.0047s ]
+NOTIC: [8] Undefined variable: name /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 84 行.
+SQL: SHOW COLUMNS FROM `jz_all_record` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `jz_options` [ RunTime:0.0003s ]
+SQL: SELECT `option_value` FROM `jz_options` WHERE `option_name` = 'bonus' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jz_user` WHERE `id` = 86304 LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `jz_user` SET `token`='762f6dffdaf21ceb7d9211d06a5a690d' WHERE `id` = 86304 [ RunTime:0.0042s ]
+SQL: SHOW COLUMNS FROM `jz_room` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jz_room` WHERE `id` = 5714 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: istongyi /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 105 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000021s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000045s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003098s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003115s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000133s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000137s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000289s ]
+
+[ 2018-05-03T17:37:16+08:00 ] 61.151.207.252 /index.php/portal/index/tongyi
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000343s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000129s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000980s ]
+NOTIC: [8] Undefined index: uid /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 20 行.
+NOTIC: [8] Undefined index: token /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 23 行.
+NOTIC: [8] Undefined index: code /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `jz_all_record` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jz_options` [ RunTime:0.0003s ]
+SQL: SELECT `option_value` FROM `jz_options` WHERE `option_name` = 'bonus' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jz_user` WHERE `id` = 86304 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000328s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000345s ]
+
+[ 2018-05-03T17:37:17+08:00 ] 61.151.207.252 /portal/index/room.html?room=5714&from=groupmessage&code=011DfNcp1nAK8p0ki9ap1IpMcp1DfNc-&state=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000273s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000381s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000137s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001005s ]
+NOTIC: [8] Undefined index: uid /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 20 行.
+NOTIC: [8] Undefined index: token /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `jz_all_record` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jz_options` [ RunTime:0.0003s ]
+SQL: SELECT `option_value` FROM `jz_options` WHERE `option_name` = 'bonus' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jz_user` WHERE `id` = 86304 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.0004s ]
+SQL: UPDATE `jz_user` SET `token`='7c76cf4373718abeda987022b894e82b' WHERE `id` = 86304 [ RunTime:0.0048s ]
+SQL: SHOW COLUMNS FROM `jz_room` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jz_room` WHERE `id` = 5714 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_user` WHERE `id` = 2523 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jz_qun` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jz_qun` WHERE `open` = 2523  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: df /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 130 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 130 行.
+NOTIC: [8] Undefined index: gz /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 131 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 131 行.
+NOTIC: [8] Undefined index: sz /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 132 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 132 行.
+NOTIC: [8] Undefined index: px /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 138 行.
+NOTIC: [8] Undefined index: gz2 /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 144 行.
+NOTIC: [8] Undefined index: gz2 /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 144 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000075s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+NOTIC: [8] Undefined index: gz2 /www/wwwroot/nkgj.qincin.com/data/runtime/Cache/Portal/22dba39deb75eb333ad267043b4c27f8.php 第 71 行.
+SQL: SELECT * FROM `jz_user` WHERE `id` = 2523 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Undefined offset: 86304 /www/wwwroot/nkgj.qincin.com/data/runtime/Cache/Portal/22dba39deb75eb333ad267043b4c27f8.php 第 314 行.
+SQL: SHOW COLUMNS FROM `jz_user_room` [ RunTime:0.0003s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `jz_user_room` WHERE `uid` = 86304 AND `type` = 16 LIMIT 1   [ RunTime:0.0033s ]
+SQL: SELECT * FROM `jz_user_room` WHERE `uid` = 86304 AND `type` = 16 ORDER BY jifen desc LIMIT 1   [ RunTime:0.0033s ]
+NOTIC: [8] Undefined index: gz2 /www/wwwroot/nkgj.qincin.com/data/runtime/Cache/Portal/22dba39deb75eb333ad267043b4c27f8.php 第 334 行.
+NOTIC: [8] Undefined variable: indexxx /www/wwwroot/nkgj.qincin.com/data/runtime/Cache/Portal/22dba39deb75eb333ad267043b4c27f8.php 第 354 行.
+SQL: SELECT * FROM `jz_user` WHERE `id` = 10179 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jz_user` WHERE `id` = 2697 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jz_user` WHERE `id` = 49503 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_user` WHERE `id` = 75516 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jz_user` WHERE `id` = 49242 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jz_user` WHERE `id` = 7656 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `jz_user` WHERE `id` = 9135 LIMIT 1   [ RunTime:0.0002s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015285s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015297s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000141s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000345s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000360s ]
+
+[ 2018-05-03T17:37:17+08:00 ] 61.151.207.252 /index.php/portal/index/getconfig/?url=http%3A%2F%2Fnkgj.tukupi.cn%2Fportal%2Findex%2Froom.html%3Froom%3D5714%26from%3Dgroupmessage%26code%3D011DfNcp1nAK8p0ki9ap1IpMcp1DfNc-%26state%3D123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000347s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000400s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000147s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001124s ]
+NOTIC: [8] Undefined index: uid /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 20 行.
+NOTIC: [8] Undefined index: token /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 23 行.
+NOTIC: [8] Undefined index: code /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `jz_all_record` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jz_options` [ RunTime:0.0003s ]
+SQL: SELECT `option_value` FROM `jz_options` WHERE `option_name` = 'bonus' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jz_user` WHERE `id` = 86304 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant weixin_appid - assumed 'weixin_appid' /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 40 行.
+NOTIC: [8] Use of undefined constant weixin_key - assumed 'weixin_key' /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 40 行.
+NOTIC: [8] Use of undefined constant access_token - assumed 'access_token' /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 40 行.
+NOTIC: [8] Use of undefined constant weixin_appid - assumed 'weixin_appid' /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 42 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000288s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000304s ]
+
+[ 2018-05-03T17:37:24+08:00 ] 61.129.6.70 /portal/index/room.html?room=5676&from=groupmessage
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000306s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000384s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001038s ]
+NOTIC: [8] Undefined index: uid /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 20 行.
+NOTIC: [8] Undefined index: token /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 23 行.
+NOTIC: [8] Undefined index: uid /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: code /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 33 行.
+
+[ 2018-05-03T17:37:24+08:00 ] 61.129.6.70 /portal/index/room.html?room=5676&from=groupmessage&code=021i3Chr0unoZd178Xfr0ISshr0i3Ch8&state=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000348s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000144s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001002s ]
+NOTIC: [8] Undefined index: uid /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 20 行.
+NOTIC: [8] Undefined index: token /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 23 行.
+NOTIC: [8] Undefined index: uid /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 33 行.
+NOTIC: [8] Undefined index: uid /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 40 行.
+NOTIC: [8] Use of undefined constant weixin_appid - assumed 'weixin_appid' /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 43 行.
+NOTIC: [8] Use of undefined constant weixin_key - assumed 'weixin_key' /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 43 行.
+NOTIC: [8] Use of undefined constant access_token - assumed 'access_token' /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 43 行.
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jz_user` WHERE `openid` = 'otNJs1hQALWd7Kqd_tRYUKtcz2bE' LIMIT 1   [ RunTime:0.0012s ]
+SQL: UPDATE `jz_user` SET `openid`='otNJs1hQALWd7Kqd_tRYUKtcz2bE',`last_login_ip`='36.4.94.157',`last_time`='2018-05-03 17:37:24' WHERE `id` = 95961 [ RunTime:0.0043s ]
+NOTIC: [8] Undefined variable: name /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 84 行.
+SQL: SHOW COLUMNS FROM `jz_all_record` [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `jz_options` [ RunTime:0.0003s ]
+SQL: SELECT `option_value` FROM `jz_options` WHERE `option_name` = 'bonus' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jz_user` WHERE `id` = 95961 LIMIT 1   [ RunTime:0.0002s ]
+SQL: UPDATE `jz_user` SET `token`='acf005396e2c201d6f8f5f3ba8071464' WHERE `id` = 95961 [ RunTime:0.0038s ]
+SQL: SHOW COLUMNS FROM `jz_room` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jz_room` WHERE `id` = 5676 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: istongyi /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 105 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000019s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000036s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003097s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003113s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000166s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000140s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000329s ]
+
+[ 2018-05-03T17:37:26+08:00 ] 61.129.6.70 /index.php/portal/index/tongyi
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000348s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000995s ]
+NOTIC: [8] Undefined index: uid /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 20 行.
+NOTIC: [8] Undefined index: token /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 23 行.
+NOTIC: [8] Undefined index: code /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `jz_all_record` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jz_options` [ RunTime:0.0003s ]
+SQL: SELECT `option_value` FROM `jz_options` WHERE `option_name` = 'bonus' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jz_user` WHERE `id` = 95961 LIMIT 1   [ RunTime:0.0002s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000319s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000336s ]
+
+[ 2018-05-03T17:37:26+08:00 ] 61.129.6.70 /portal/index/room.html?room=5676&from=groupmessage&code=021i3Chr0unoZd178Xfr0ISshr0i3Ch8&state=123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000274s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000345s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000132s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000983s ]
+NOTIC: [8] Undefined index: uid /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 20 行.
+NOTIC: [8] Undefined index: token /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 23 行.
+SQL: SHOW COLUMNS FROM `jz_all_record` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `jz_options` [ RunTime:0.0003s ]
+SQL: SELECT `option_value` FROM `jz_options` WHERE `option_name` = 'bonus' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jz_user` WHERE `id` = 95961 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.0004s ]
+SQL: UPDATE `jz_user` SET `token`='ceb9f0c2eb7e3519da5dafae6df68b09' WHERE `id` = 95961 [ RunTime:0.0045s ]
+SQL: SHOW COLUMNS FROM `jz_room` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jz_room` WHERE `id` = 5676 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_user` WHERE `id` = 96048 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jz_qun` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jz_qun` WHERE `open` = 96048  [ RunTime:0.0001s ]
+NOTIC: [8] Undefined index: df /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 130 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 130 行.
+NOTIC: [8] Undefined index: gz /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 131 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 131 行.
+NOTIC: [8] Undefined index: sz /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 132 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 132 行.
+NOTIC: [8] Undefined index: px /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 138 行.
+NOTIC: [8] Undefined index: gz2 /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 144 行.
+NOTIC: [8] Undefined index: gz2 /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 144 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000093s ]
+NOTIC: [8] Undefined index: gz2 /www/wwwroot/nkgj.qincin.com/data/runtime/Cache/Portal/1d28a52b91c8e2a19bd27c257555e027.php 第 71 行.
+SQL: SELECT * FROM `jz_user` WHERE `id` = 96048 LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jz_user_room` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jz_user_room` WHERE `uid` = 95961 AND `room` = 5676 LIMIT 1   [ RunTime:0.0028s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/nkgj.qincin.com/data/runtime/Cache/Portal/1d28a52b91c8e2a19bd27c257555e027.php 第 99 行.
+SQL: SELECT `nickname` FROM `jz_user` WHERE `id` = 96048 LIMIT 1   [ RunTime:0.0001s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' /www/wwwroot/nkgj.qincin.com/data/runtime/Cache/Portal/1d28a52b91c8e2a19bd27c257555e027.php 第 99 行.
+SQL: SELECT `nickname` FROM `jz_user` WHERE `id` = 95961 LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-05-03T17:37:26+08:00 ] 61.129.6.70 /index.php/portal/index/getconfig/?url=http%3A%2F%2Fnkgj.tukupi.cn%2Fportal%2Findex%2Froom.html%3Froom%3D5676%26from%3Dgroupmessage%26code%3D021i3Chr0unoZd178Xfr0ISshr0i3Ch8%26state%3D123
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000278s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000389s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000136s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001017s ]
+NOTIC: [8] Undefined index: uid /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 20 行.
+NOTIC: [8] Undefined index: token /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 23 行.
+NOTIC: [8] Undefined index: code /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `jz_all_record` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jz_options` [ RunTime:0.0003s ]
+SQL: SELECT `option_value` FROM `jz_options` WHERE `option_name` = 'bonus' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jz_user` WHERE `id` = 95961 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Use of undefined constant weixin_appid - assumed 'weixin_appid' /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 40 行.
+NOTIC: [8] Use of undefined constant weixin_key - assumed 'weixin_key' /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 40 行.
+NOTIC: [8] Use of undefined constant access_token - assumed 'access_token' /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 40 行.
+NOTIC: [8] Use of undefined constant weixin_appid - assumed 'weixin_appid' /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 42 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000293s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000309s ]
+
+[ 2018-05-03T17:37:43+08:00 ] 112.44.107.25 /index.php/portal/index/fangjian_gz/room/5722
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000350s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000131s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000999s ]
+NOTIC: [8] Undefined index: uid /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 20 行.
+NOTIC: [8] Undefined index: token /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 23 行.
+NOTIC: [8] Undefined index: code /www/wwwroot/nkgj.qincin.com/application/Common/Controller/HomebaseController.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `jz_all_record` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `jz_options` [ RunTime:0.0003s ]
+SQL: SELECT `option_value` FROM `jz_options` WHERE `option_name` = 'bonus' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jz_user` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jz_user` WHERE `id` = 31755 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jz_room` [ RunTime:0.0003s ]
+SQL: SELECT * FROM `jz_room` WHERE `id` = 5722 LIMIT 1   [ RunTime:0.0002s ]
+NOTIC: [8] Undefined index: df /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 286 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 286 行.
+NOTIC: [8] Undefined index: gz /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 287 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 287 行.
+NOTIC: [8] Undefined index: sz /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 288 行.
+NOTIC: [8] Undefined index:  /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 288 行.
+NOTIC: [8] Undefined index: px /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 294 行.
+NOTIC: [8] Undefined offset: 0 /www/wwwroot/nkgj.qincin.com/application/Portal/Controller/IndexController.class.php 第 300 行.
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000028s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000043s ]
+NOTIC: [8] Undefined index: px /www/wwwroot/nkgj.qincin.com/data/runtime/Cache/Portal/a15f1231422b3f09974c6f5a52c245b7.php 第 56 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004103s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004117s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000136s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000140s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000296s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000349s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000364s ]
+

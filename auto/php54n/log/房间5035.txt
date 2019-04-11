@@ -1,0 +1,6 @@
+2018-03-31 11:33:35:{"token":"9c3452a5bd3a82715697001645a9fdbb","room":"5035","act":"init"}
+2018-03-31 11:33:39:945351{"msg":"我出去叫人","id":"messageundefined2","act":"sendmsg"}
+2018-03-31 11:33:41:945351{"time":1522467221137,"act":"timeyc"}
+2018-03-31 11:33:41:945351{"msg":"算你牛逼","id":"messageundefined5","act":"sendmsg"}
+2018-03-31 11:33:46:945351{"time":1522467226198,"act":"timeyc"}
+2018-03-31 11:42:50:{"token":"ac9b69de04bdfb3ac5b7d503be14b4c3","room":"5035","act":"init"}

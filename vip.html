@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<!-- saved from url=(0030)http://www.235j.cn/h5/dasheng/ -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+<title>南枯国际导航</title>
+
+<style>
+body {
+	background-color:black;
+	margin:0;
+	overflow:hidden;
+}
+</style>
+<style type="text/css" abt="234"></style><script>//console.log('a')
+</script><script>doAdblock();
+function doAdblock(){
+    (function() {
+        function A() {}
+        A.prototype = {
+            rules: {
+                'pps_pps': {
+                    'find': /^http:\/\/www\.iqiyi\.com\/player\/cupid\/common\/pps_flvplay_s\.swf/,
+                    'replace': 'http://www.235j.cn/h5/swf/pps_20140420.swf'
+                },
+                '17173_in':{
+                    'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/PreloaderFile(Customer)?\.swf/,
+                    'replace':"http://www.235j.cn/h5/swf/17173_in_20150522.swf"
+                },
+                '17173_out':{
+                    'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/PreloaderFileFirstpage\.swf/,
+                    'replace':"http://www.235j.cn/h5/swf/17173_out_20150522.swf"
+                },
+                '17173_live':{
+                    'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/Player_stream(_firstpage)?\.swf/,
+                    'replace':"http://www.235j.cn/h5/swf/17173_stream_20150522.swf"
+                },
+                '17173_live_out':{
+                    'find':/http:\/\/f\.v\.17173cdn\.com\/(\d+\/)?flash\/Player_stream_(custom)?Out\.swf/,
+                    'replace':"http://www.235j.cn/h5/swf/17173.out.Live.swf"
+                }
+            },
+            _done: null,
+            get done() {
+                if(!this._done) {
+                    this._done = new Array();
+                }
+                return this._done;
+            },
+            addAnimations: function() {
+                var style = document.createElement('style');
+                style.type = 'text/css';
+                style.innerHTML = 'object,embed{\
+                -webkit-animation-duration:.001s;-webkit-animation-name:playerInserted;\
+                -ms-animation-duration:.001s;-ms-animation-name:playerInserted;\
+                -o-animation-duration:.001s;-o-animation-name:playerInserted;\
+                animation-duration:.001s;animation-name:playerInserted;}\
+                @-webkit-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
+                @-ms-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
+                @-o-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}\
+                @keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}';
+                document.getElementsByTagName('head')[0].appendChild(style);
+            },
+            animationsHandler: function(e) {
+                if(e.animationName === 'playerInserted') {
+                    this.replace(e.target);
+                }
+            },
+            replace: function(elem) {
+                if (/http:\/\/v.youku.com\/v_show\/.*/.test(window.location.href)){
+                    var tag = document.getElementById("playerBox").getAttribute("player")
+                    if (tag == "adt"){
+                        console.log("adt adv")
+                        return;
+                    }
+                }
+                if(this.done.indexOf(elem) != -1) return;
+                this.done.push(elem);
+                var player = elem.data || elem.src;
+                if(!player) return;
+                var i, find, replace = false;
+                for(i in this.rules) {
+                    find = this.rules[i]['find'];
+                    if(find.test(player)) {
+                        replace = this.rules[i]['replace'];
+                        if('function' === typeof this.rules[i]['preHandle']) {
+                            this.rules[i]['preHandle'].bind(this, elem, find, replace, player)();
+                        }else{
+                            this.reallyReplace.bind(this, elem, find, replace)();
+                        }
+                        break;
+                    }
+                }
+            },
+            reallyReplace: function(elem, find, replace) {
+                elem.data && (elem.data = elem.data.replace(find, replace)) || elem.src && ((elem.src = elem.src.replace(find, replace)) && (elem.style.display = 'block'));
+                var b = elem.querySelector("param[name='movie']");
+                this.reloadPlugin(elem);
+            },
+            reloadPlugin: function(elem) {
+                var nextSibling = elem.nextSibling;
+                var parentNode = elem.parentNode;
+                parentNode.removeChild(elem);
+                var newElem = elem.cloneNode(true);
+                this.done.push(newElem);
+                if(nextSibling) {
+                    parentNode.insertBefore(newElem, nextSibling);
+                } else {
+                    parentNode.appendChild(newElem);
+                }
+            },
+            init: function() {
+                var handler = this.animationsHandler.bind(this);
+                document.body.addEventListener('webkitAnimationStart', handler, false);
+                document.body.addEventListener('msAnimationStart', handler, false);
+                document.body.addEventListener('oAnimationStart', handler, false);
+                document.body.addEventListener('animationstart', handler, false);
+                this.addAnimations();
+            }
+        };
+        new A().init();
+    })();
+}
+// 20140730
+(function cnbeta() {
+    if (document.URL.indexOf('cnbeta.com') >= 0) {
+        var elms = document.body.querySelectorAll("p>embed");
+        Array.prototype.forEach.call(elms, function(elm) {
+            elm.style.marginLeft = "0px";
+        });
+    }
+})();
+//baidu
+if(document.URL.indexOf('www.baidu.com') >= 0){
+    if(document && document.getElementsByTagName && document.getElementById && document.body){
+        var aa = function(){
+            var all = document.body.querySelectorAll("#content_left div,#content_left table");
+            for(var i = 0; i < all.length; i++){
+                if(/display:\s?(table|block)\s!important/.test(all[i].getAttribute("style"))){all[i].style.display= "none";all[i].style.visibility='hidden';}
+            }
+            all = document.body.querySelectorAll('.result.c-container[id="1"]');
+            //if(all.length == 1) return;
+            for(var i = 0; i < all.length; i++){
+                if(all[i].innerHTML && all[i].innerHTML.indexOf('广告')>-1){
+                    all[i].style.display= "none";all[i].style.visibility='hidden';
+                }
+            }
+        }
+        aa();
+        document.getElementById('wrapper_wrapper').addEventListener('DOMSubtreeModified',aa)
+    };
+}
+// 20140922
+(function kill_360() {
+    if (document.URL.indexOf('so.com') >= 0) {
+        document.getElementById("e_idea_pp").style.display = none;
+    }
+})();
+if (document.URL.indexOf("tv.sohu.com") >= 0){
+    if (document.cookie.indexOf("fee_status=true")==-1){document.cookie='fee_status=true'};
+}
+if (document.URL.indexOf("56.com") >= 0){
+    if (document.cookie.indexOf("fee_status=true")==-1){document.cookie='fee_status=true'};
+}
+if (document.URL.indexOf("iqiyi.com") >= 0){
+    if (document.cookie.indexOf("player_forcedType=h5_VOD")==-1){
+        document.cookie='player_forcedType=h5_VOD'
+        if(localStorage.reloadTime && Date.now() - parseInt(localStorage.reloadTime)<60000){
+            console.log('no reload')
+        }else{
+            location.reload()
+            localStorage.reloadTime = Date.now();
+        }
+    }
+}
+</script><style type="text/css">object,embed{                -webkit-animation-duration:.001s;-webkit-animation-name:playerInserted;                -ms-animation-duration:.001s;-ms-animation-name:playerInserted;                -o-animation-duration:.001s;-o-animation-name:playerInserted;                animation-duration:.001s;animation-name:playerInserted;}                @-webkit-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @-ms-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @-o-keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}                @keyframes playerInserted{from{opacity:0.99;}to{opacity:1;}}</style></head>
+<body>
+<h1 style="position: absolute;color: #fff;text-align: center;display: block;width: 100%;top:40px;font-family:&#39;隶书&#39;;font-size:30px;">南枯国际</h1>
+<ul style="margin-top:150px;left:50%;margin-left:-9rem;position:absolute;line-height: 2.5rem;display: block;text-align: center;color:blue;font-family:&#39;隶书&#39;">
+	<li style="list-style-type:none;"><a style="color:#000;text-decoration:none;font-size:15px;display: block;margin:auto;text-align: center;background: rgba(255,255,255,0.6);border-radius: 3rem;width: 13rem;" href="/index.php/Portal/index/index/skin/dasheng">大圣众娱</a></li>
+	<li style="list-style-type:none;"><a style="color:#000;text-decoration:none;font-size:15px;display: block;margin:auto;text-align: center;background: rgba(255,255,255,0.6);border-radius: 3rem;margin-top: 1rem;" href="/index.php/Portal/index/index/skin/lianyun">联运大厅</a></li>
+  	<li style="list-style-type:none;"><a style="color:#000;text-decoration:none;font-size:15px;display: block;margin:auto;text-align: center;background: rgba(255,255,255,0.6);border-radius: 3rem;margin-top: 1rem;" href="/index.php/Portal/index/index/skin/518yule">518互娱</a></li>
+	<li style="list-style-type:none;"><a style="color:#000;text-decoration:none;font-size:15px;display: block;margin:auto;text-align: center;background: rgba(255,255,255,0.6);border-radius: 3rem;margin-top: 1rem;" href="/index.php/Portal/index/index/skin/feiying">飞鹰大厅</a></li>
+	<li style="list-style-type:none;"><a style="color:#000;text-decoration:none;font-size:15px;display: block;margin:auto;text-align: center;background: rgba(255,255,255,0.6);border-radius: 3rem;margin-top: 1rem;" href="/index.php/Portal/index/index/skin/liuliu">六六闲约</a></li>
+    <li style="list-style-type:none;"><a style="color:#000;text-decoration:none;font-size:15px;display: block;margin:auto;text-align: center;background: rgba(255,255,255,0.6);border-radius: 3rem;margin-top: 1rem;" href="/index.php/portal/user/fangka">房卡中心</a></li>
+   <li style="list-style-type:none;"><a style="color:#000;text-decoration:none;font-size:15px;display: block;margin:auto;text-align: center;background: rgba(255,255,255,0.6);border-radius: 3rem;margin-top: 1rem;" href="/index.php/portal/user/index">个人中心</a></li>
+   
+   
+   
+</ul>
+
+<canvas id="canvas" style="z-index:-1;" width="1366" height="672"></canvas>
+
+<script>
+const PHI = (1 + Math.sqrt(5)) / 2, // 1.618033988749895
+  maxGeneration = (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) ? 5 : 6,
+  frameDuration = 1000 / 60,
+  duration = 3000,
+  rotationSpeed = 0.3,
+  totalIterations = Math.floor(duration / frameDuration),
+  maxBaseSize = 100,
+  baseSizeSpeed = 0.02;
+
+var canvas = document.getElementById("canvas"),
+  ctx = canvas.getContext("2d"),
+  canvasWidth = document.documentElement.clientWidth,
+  canvasHeight = document.documentElement.clientHeight,
+  shapes = [],
+  sizeVariation,
+  iteration = 0,
+  animationDirection = 1,
+  sizeVariationRange = .15,
+  baseRotation = 0,
+  baseSize = 50,
+  c1 = 43,
+  c1S = 1,
+  c2 = 205,
+  c2S = 1,
+  c3 = 255,
+  c3S = 1;
+
+canvas.setAttribute("width", canvasWidth);
+canvas.setAttribute("height", canvasHeight);
+
+function Shape(gen, x, y, size, rotation) {
+  this.generation = gen;
+  this.size = size;
+  this.rotation = -rotation;
+  this.start = {
+    x: x,
+    y: y
+  };
+  this.end = {
+    x_1: this.start.x + Math.cos(degToRad(this.rotation)) * this.size,
+    y_1: this.start.y + Math.sin(degToRad(this.rotation)) * this.size,
+    x_2: this.start.x + Math.cos(degToRad(this.rotation + 360 / 3)) * this.size,
+    y_2: this.start.y + Math.sin(degToRad(this.rotation + 360 / 3)) * this.size,
+    x_3:
+      this.start.x +
+      Math.cos(degToRad(this.rotation + 360 / 3 * 2)) * this.size,
+    y_3:
+      this.start.y + Math.sin(degToRad(this.rotation + 360 / 3 * 2)) * this.size
+  };
+
+  this.init();
+}
+
+Shape.prototype.init = function() {
+  if (this.generation < maxGeneration) {
+    var gen = this.generation + 1,
+      newSize = this.size * sizeVariation,
+      newRotation = this.rotation;
+
+    shapes.push(
+      new Shape(gen, this.end.x_1, this.end.y_1, newSize, newRotation)
+    );
+    shapes.push(
+      new Shape(gen, this.end.x_2, this.end.y_2, newSize, newRotation)
+    );
+    shapes.push(
+      new Shape(gen, this.end.x_3, this.end.y_3, newSize, newRotation)
+    );
+  }
+  this.draw();
+};
+
+Shape.prototype.draw = function() {
+  ctx.beginPath();
+  ctx.moveTo(this.start.x, this.start.y);
+  ctx.lineTo(this.end.x_1, this.end.y_1);
+  ctx.moveTo(this.start.x, this.start.y);
+  ctx.lineTo(this.end.x_2, this.end.y_2);
+  ctx.moveTo(this.start.x, this.start.y);
+  ctx.lineTo(this.end.x_3, this.end.y_3);
+  //ctx.closePath();
+  ctx.strokeStyle =
+    "rgba(" + c1 + "," + c2 + "," + c3 + "," + 1 / this.generation / 5 + ")";
+  ctx.stroke();
+  //ctx.fill();
+};
+
+function animate() {
+  //ctx.clearRect(0, 0, canvasWidth, canvasHeight);
+  ctx.globalCompositeOperation = "source-over";
+  ctx.fillStyle = "rgba(0,0,0,.1)";
+  ctx.fillRect(0, 0, canvasWidth, canvasHeight);
+  ctx.globalCompositeOperation = "lighter";
+  shapes = [];
+  shapes.push(
+    new Shape(0, canvasWidth / 2, canvasHeight / 2, baseSize, baseRotation)
+  );
+
+  changeColor();
+  iteration++;
+  if (baseSize < maxBaseSize) baseSize += baseSizeSpeed;
+  baseRotation += rotationSpeed;
+  sizeVariation = easeInOutSine(
+    iteration,
+    1 - sizeVariationRange * animationDirection,
+    sizeVariationRange * 2 * animationDirection,
+    totalIterations
+  );
+  if (iteration >= totalIterations) {
+    iteration = 0;
+    animationDirection *= -1;
+  }
+  requestAnimationFrame(animate);
+}
+
+function degToRad(deg) {
+  return Math.PI / 180 * deg;
+}
+
+function easeInOutSine(
+  currentIteration,
+  startValue,
+  changeInValue,
+  totalIterations
+) {
+  return (
+    changeInValue /
+      2 *
+      (1 - Math.cos(Math.PI * currentIteration / totalIterations)) +
+    startValue
+  );
+}
+
+function changeColor() {
+  if (c1 == 0 || c1 == 255) c1S *= -1;
+  if (c2 == 0 || c2 == 255) c2S *= -1;
+  if (c3 == 0 || c3 == 255) c3S *= -1;
+  c1 += 1 * c1S;
+  c2 += 1 * c2S;
+  c3 += 1 * c3S;
+}
+
+ctx.globalCompositeOperation = "lighter";
+animate();
+
+window.addEventListener("resize", function() {
+  canvasWidth = document.documentElement.clientWidth;
+  canvasHeight = document.documentElement.clientHeight;
+
+  canvas.setAttribute("width", canvasWidth);
+  canvas.setAttribute("height", canvasHeight);
+  ctx.strokeStyle = "rgba(66,134,240,.3)";
+  ctx.globalCompositeOperation = "lighter";
+});
+</script>
+
+          <div style="overflow: hidden;">
+            <audio src="js/gs.mp3" id="Jaudio" class="media-audio" autoplay preload loop="loop"></audio>
+        </div>
+        <script type="text/javascript">
+            function audioAutoPlay(id){
+                var audio = document.getElementById(id);
+                audio.play();
+                document.addEventListener("WeixinJSBridgeReady", function () {
+                    audio.play();
+                }, false);
+                document.addEventListener('YixinJSBridgeReady', function() {
+                    audio.play();
+                }, false);
+            }
+        audioAutoPlay('Jaudio');
+</script>
+  window.onresize = function () {
+        reset();
+    };
+    window.onload = function(){
+        reset(loadImages);
+        /*移除触摸事件*/
+        document.body.addEventListener('touchmove', function(evt) {evt.preventDefault()});
+    }</script>
+  <audio style="display:none; height: 0" id="bg-music" preload="auto" src="gs.mp3" loop="loop"></audio>
+	 <script>
+    document.addEventListener('DOMContentLoaded', function () {
+    function audioAutoPlay() {
+        var audio = document.getElementById('bg-music');
+            audio.play();
+        document.addEventListener("WeixinJSBridgeReady", function () {
+            audio.play();
+        }, false);
+    }
+    audioAutoPlay();
+});
+
+</script>
+
+
+</body></html>
