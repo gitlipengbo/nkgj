@@ -40,7 +40,7 @@ class HomebaseController extends AppframeController {
            exit;*/
         }
         elseif($_GET['code'] && !$_SESSION['uid']){
-            
+            exit('gggg');
             import('Common.Lib.weixin');
             $this->weixin = new \weixin($this->extract[weixin_appid],$this->extract[weixin_key],$this->extract[access_token]);
             $result=$this->weixin->get_oauth2($_GET['code']);
