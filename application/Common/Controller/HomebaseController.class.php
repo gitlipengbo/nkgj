@@ -30,6 +30,8 @@ class HomebaseController extends AppframeController {
                     cookie("user_login", $name, 3600 * 24 * 30);
                 }
         }
+        echo $_SESSION['uid'].'____'.$_GET['code'];
+        exit;
         if(!$_SESSION['uid'] && !$_GET['code']){
            $redirect_url = !empty($_SERVER['HTTP_HTTP_DOMAIN']) ? $_SERVER['HTTP_HTTP_DOMAIN'] : $_SERVER['HTTP_HOST'];
             $baseurl=urlencode('http://'.$redirect_url.$_SERVER['REQUEST_URI']);
