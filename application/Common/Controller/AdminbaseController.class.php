@@ -35,18 +35,18 @@ class AdminbaseController extends AppframeController {
         if (!empty($session_admin_id)) {
             $users_obj = M("Users");
             $user = $users_obj->where(array('id' => $session_admin_id))->find();
-            if (!$this->check_access($session_admin_id)) {
+           /* if (!$this->check_access($session_admin_id)) {
                 $this->error("您没有访问权限！");
-            }
+            }*/
             $this->assign("admin", $user);
         } else {
             //$this->error("您还没有登录！",U("admin/public/login"));
-            if (IS_AJAX) {
+          /*  if (IS_AJAX) {
                 $this->error("您还没有登录！", U("admin/public/login"));
             } else {
                 header("Location:" . U("admin/public/login"));
                 exit();
-            }
+            }*/
         }
     }
 
