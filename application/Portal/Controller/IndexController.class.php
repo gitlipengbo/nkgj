@@ -50,6 +50,8 @@ class IndexController extends HomebaseController {
         echo json_encode($data);
     }
     public function index() {
+        echo $_SESSION['istongyi'];
+        exit;
         if(!$_SESSION['istongyi']){
             $this->display(":fangjian_tishi");
             exit();
