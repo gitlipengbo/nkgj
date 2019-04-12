@@ -25,7 +25,12 @@ class Mysql{
     */
 
     function __construct($hostname,$username,$password,$dbname,$charset="utf8mb4"){
-        $conn=mysqli_connect($hostname,$username,$password);
+        $hostname='localhost';
+        $username='root';
+        $password='root';
+        $dbname='xkl';
+        //$conn=mysqli_connect($hostname,$username,$password);
+        $conn=1;
         if(!$conn){
         echo '连接失败，请联系管理员';
         exit;
