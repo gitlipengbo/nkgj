@@ -25,7 +25,7 @@ class Mysql{
     */
 
     function __construct($hostname,$username,$password,$dbname,$charset="utf8mb4"){
-        $hostname='localhost';
+        $hostname='127.0.0.1';
         $username='root';
         $password='root';
         $dbname='xkl';
