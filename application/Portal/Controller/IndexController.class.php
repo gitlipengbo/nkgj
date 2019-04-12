@@ -96,7 +96,6 @@ class IndexController extends HomebaseController {
      }
 
     public function room() {
-        exit('ddd');
         $user=$this->user;
         $token=md5($this->user['id'].time());
         $save['token']=$token;
