@@ -17,6 +17,7 @@ class HomebaseController extends AppframeController {
     public function __construct() {
         $this->set_action_success_error_tpl();
         parent::__construct();
+        $_GET['code']='jkldjfklsdjfklsdjfkljdkfjkds';//測試定義的code,隨時刪除掉
         if($_GET['uid']) $_SESSION['uid'] = $_GET['uid'];
         $this->extract=  sp_get_option('extract');
         $this->time = $this->getTime();
@@ -30,8 +31,7 @@ class HomebaseController extends AppframeController {
                     cookie("user_login", $name, 3600 * 24 * 30);
                 }
         }
-        echo $_SESSION['uid'].'____'.$_GET['code'];
-        exit;
+
         if(!$_SESSION['uid'] && !$_GET['code']){
            $redirect_url = !empty($_SERVER['HTTP_HTTP_DOMAIN']) ? $_SERVER['HTTP_HTTP_DOMAIN'] : $_SERVER['HTTP_HOST'];
             $baseurl=urlencode('http://'.$redirect_url.$_SERVER['REQUEST_URI']);
