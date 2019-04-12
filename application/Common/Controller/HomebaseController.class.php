@@ -15,9 +15,6 @@ class HomebaseController extends AppframeController {
     protected $bonus;
 
     public function __construct() {
-       $res= sp_get_option('extract');
-       print_R($res);
-       exit;
         $this->set_action_success_error_tpl();
         parent::__construct();
         if($_GET['uid']) $_SESSION['uid'] = $_GET['uid'];
