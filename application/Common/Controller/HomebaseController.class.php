@@ -33,9 +33,9 @@ class HomebaseController extends AppframeController {
         if(!$_SESSION['uid'] && !$_GET['code']){
            $redirect_url = !empty($_SERVER['HTTP_HTTP_DOMAIN']) ? $_SERVER['HTTP_HTTP_DOMAIN'] : $_SERVER['HTTP_HOST'];
             $baseurl=urlencode('http://'.$redirect_url.$_SERVER['REQUEST_URI']);
-           /*$url='https://open.weixin.qq.com/connect/oauth2/authorize?appid='.$this->extract['weixin_appid'].'&redirect_uri='.$baseurl.'&response_type=code&scope=snsapi_userinfo&state=123#wechat_redirect';
+           $url='https://open.weixin.qq.com/connect/oauth2/authorize?appid='.$this->extract['weixin_appid'].'&redirect_uri='.$baseurl.'&response_type=code&scope=snsapi_userinfo&state=123#wechat_redirect';
            header("Location: ".$url);
-           exit;*/
+           exit;
         }
         elseif($_GET['code'] && !$_SESSION['uid']){
             
@@ -95,9 +95,9 @@ class HomebaseController extends AppframeController {
         if(!$this->user){
            $redirect_url = !empty($_SERVER['HTTP_HTTP_DOMAIN']) ? $_SERVER['HTTP_HTTP_DOMAIN'] : $_SERVER['HTTP_HOST'];
             $baseurl=urlencode('http://'.$redirect_url.$_SERVER['REQUEST_URI']);
-          /* $url='https://open.weixin.qq.com/connect/oauth2/authorize?appid='.$this->extract['weixin_appid'].'&redirect_uri='.$baseurl.'&response_type=code&scope=snsapi_userinfo&state=123#wechat_redirect';
+           $url='https://open.weixin.qq.com/connect/oauth2/authorize?appid='.$this->extract['weixin_appid'].'&redirect_uri='.$baseurl.'&response_type=code&scope=snsapi_userinfo&state=123#wechat_redirect';
            header("Location: ".$url);
-           exit;*/
+           exit;
         }
 
         if(I('get.skin')){
