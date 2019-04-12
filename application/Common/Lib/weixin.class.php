@@ -74,6 +74,13 @@ class weixin {
             return $result;
             exit;
     }
+    public function get_userinfo_nuws($token,$openid){
+        $user=M("user");
+        $map['openid']=$openid;
+        $result=$user->where($map)->find();
+        return $result;
+        exit;
+    }
     public function get_qrcode($id){
             $url=$this->getcode_url.$this->access_token;
             $data='{"action_name": "QR_LIMIT_SCENE", "action_info": {"scene": {"scene_id": '.$id.'}}}';
