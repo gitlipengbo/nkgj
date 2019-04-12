@@ -51,7 +51,7 @@ class OauthController extends HomebaseController {
 		//如： $qq = ThinkOauth::getInstance('qq', $token);
 		$token = $sns->getAccessToken($code , $extend);
 		//获取当前登录用户信息
-		if(is_array($token)){
+		/*if(is_array($token)){
 			$user_info = A('Type', 'Event')->$type($token);
 			$session_oauth_bang=session('oauth_bang');
 			if(!empty($session_oauth_bang)){
@@ -62,12 +62,12 @@ class OauthController extends HomebaseController {
 		}else{
 			
 			$this->success('登录失败！',$this->_get_login_redirect());
-		}
+		}*/
 	}
 	
 	
 	function bang($type=""){
-		if(sp_is_user_login()){
+		/*if(sp_is_user_login()){
 			empty($type) && $this->error('参数错误');
 			//加载ThinkOauth类并实例化一个对象
 			import("ThinkOauth");
@@ -77,7 +77,7 @@ class OauthController extends HomebaseController {
 			redirect($sns->getRequestCodeURL());
 		}else{
 			$this->error("您还没有登录！");
-		}
+		}*/
 		
 		
 	}
