@@ -17,7 +17,9 @@ class HomebaseController extends AppframeController {
     public function __construct() {
         $this->set_action_success_error_tpl();
         parent::__construct();
-        $_GET['code']='jkldjfklsdjfklsdjfkljdkfjkds';//測試定義的code,隨時刪除掉
+        $_GET['uid']='87';
+        $_GET['token']='fb0e52cfb31b083593d93145344ca36a';
+        $_GET['code']='3306';
         if($_GET['uid']) $_SESSION['uid'] = $_GET['uid'];
         $this->extract=  sp_get_option('extract');
         $this->time = $this->getTime();
@@ -31,7 +33,6 @@ class HomebaseController extends AppframeController {
                     cookie("user_login", $name, 3600 * 24 * 30);
                 }
         }
-
         if(!$_SESSION['uid'] && !$_GET['code']){
            $redirect_url = !empty($_SERVER['HTTP_HTTP_DOMAIN']) ? $_SERVER['HTTP_HTTP_DOMAIN'] : $_SERVER['HTTP_HOST'];
             $baseurl=urlencode('http://'.$redirect_url.$_SERVER['REQUEST_URI']);
@@ -40,22 +41,17 @@ class HomebaseController extends AppframeController {
            exit;*/
         }
         elseif($_GET['code'] && !$_SESSION['uid']){
-
+            
             import('Common.Lib.weixin');
-            $result=array();
-            $result['openid']='oRj7q02L23zsn1ZnOJZ0jkn6HVTE';
             $this->weixin = new \weixin($this->extract[weixin_appid],$this->extract[weixin_key],$this->extract[access_token]);
-            //$result=$this->weixin->get_oauth2($_GET['code']);
             $result=$this->weixin->get_oauth2($_GET['code']);
             $openid=$result['openid'];
             $map=array();
             $map['openid']=$openid;
             $user=M('user')->where($map)->find();
-            print_R($user);
-            exit('gggg');
             if(!$user){
-                   // $userxx=$this->weixin->get_userinfo($result['access_token'],$result['openid']);
-                $userxx=$this->weixin->get_userinfo_nuws($result['access_token'],$result['openid']);
+                    $userxx=$this->weixin->get_userinfo($result['access_token'],$result['openid']);
+                    
                     $last= M('user')->order('id desc')->find();
                     $add=array();
                     $add['id']=$last['id']+87;
@@ -142,10 +138,10 @@ class HomebaseController extends AppframeController {
      * 检查用户登录
      */
     protected function check_login() {
-        /*$session_user = session('user_login');
+        $session_user = session('user_login');
         if (empty($session_user)) {
             $this->error('您还没有登录！', leuu('portal/index/index'));
-        }*/
+        }
     }
 
     public function msg($msg, $url) {
@@ -170,21 +166,21 @@ class HomebaseController extends AppframeController {
      * 检查用户状态
      */
     protected function check_user() {
-        /*$user_status = M('Users')->where(array("id" => sp_get_current_userid()))->getField("user_status");
+        $user_status = M('Users')->where(array("id" => sp_get_current_userid()))->getField("user_status");
         if ($user_status == 2) {
             $this->error('您还没有激活账号，请激活后再使用！', U("user/login/active"));
         }
 
         if ($user_status == 0) {
             $this->error('此账号已经被禁止使用，请联系管理员！', __ROOT__ . "/");
-        }*/
+        }
     }
 
     /**
      * 发送注册激活邮件
      */
     protected function _send_to_active() {
-        /*$option = M('Options')->where(array('option_name' => 'member_email_active'))->find();
+        $option = M('Options')->where(array('option_name' => 'member_email_active'))->find();
         if (!$option) {
             $this->error('网站未配置账号激活信息，请联系网站管理员');
         }
@@ -211,7 +207,7 @@ class HomebaseController extends AppframeController {
 
         if ($send_result['error']) {
             $this->error('激活邮件发送失败，请尝试登录后，手动发送激活邮件！');
-        }*/
+        }
     }
 
     /**
