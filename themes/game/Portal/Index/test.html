@@ -131,10 +131,10 @@
      load('show');
      token='{$token}';
      if(dkxx){
-     // connect(dkxx);
+      connect(dkxx);
     }
     else{
-      //load('hide');
+      load('hide');
       prompt('服务器没开启,请稍后再试');
       setTimeout("$('body').hide()",3000);
     }
