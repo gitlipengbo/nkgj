@@ -5240,3 +5240,191 @@ Stack trace:
 #12 {main}
 2018-05-02 20:15:32 pid:12816 Worker[12816] process terminated
 2018-05-02 20:15:32 pid:2134 worker[none:12816] exit with status 64000
+2019-04-12 18:52:02 pid:20950 Workerman[./server.php] start in DEBUG mode
+2019-04-12 18:52:22 pid:20950 Workerman[server.php] stopping ...
+2019-04-12 18:52:22 pid:20950 Workerman[server.php] has been stopped
+2019-04-12 18:52:22 pid:20953 Workerman[./php54n/test.php] start in DAEMON mode
+2019-04-12 18:52:22 pid:20955 Workerman[./php54n/game2.php] start in DAEMON mode
+2019-04-12 18:52:22 pid:20959 Workerman[./php54n/game1.php] start in DAEMON mode
+2019-04-12 18:52:22 pid:20964 Workerman[./php54n/game5.php] start in DAEMON mode
+2019-04-12 18:52:22 pid:20968 Workerman[./php54n/game10.php] start in DAEMON mode
+2019-04-12 18:52:22 pid:20972 Workerman[./php54n/game3.php] start in DAEMON mode
+2019-04-12 18:52:22 pid:20975 Workerman[./php54n/game14.php] start in DAEMON mode
+2019-04-12 18:52:22 pid:20979 Workerman[./php54n/game4.php] start in DAEMON mode
+2019-04-12 18:52:22 pid:20983 Workerman[./php54n/game15.php] start in DAEMON mode
+2019-04-12 18:52:23 pid:20987 Workerman[./php54n/game6.php] start in DAEMON mode
+2019-04-12 18:52:23 pid:20992 Workerman[./php54n/game16.php] start in DAEMON mode
+2019-04-12 18:52:23 pid:20996 Workerman[./php54n/game17.php] start in DAEMON mode
+2019-04-12 18:52:23 pid:20999 Workerman[./php54n/game26.php] start in DAEMON mode
+2019-04-12 18:52:23 pid:21003 Workerman[./php54n/game27.php] start in DAEMON mode
+2019-04-12 18:52:23 pid:21007 Workerman[./php54n/game19.php] start in DAEMON mode
+2019-04-12 18:52:23 pid:21011 Workerman[./php54n/game23.php] start in DAEMON mode
+2019-04-12 18:52:23 pid:21015 Workerman[./php54n/game22.php] start in DAEMON mode
+2019-04-12 18:52:23 pid:21019 Workerman[./php54n/game20.php] start in DAEMON mode
+2019-04-12 18:52:23 pid:21023 Workerman[./php54n/game21.php] start in DAEMON mode
+2019-04-12 18:52:23 pid:21027 Workerman[./php54n/game18.php] start in DAEMON mode
+2019-04-12 18:56:03 pid:21066 Workerman[./php54n/test.php] stop 
+2019-04-12 18:56:03 pid:21066 Workerman[./php54n/test.php] is stoping ...
+2019-04-12 18:56:03 pid:20956 Workerman[test.php] stopping ...
+2019-04-12 18:56:03 pid:20956 Workerman[test.php] has been stopped
+2019-04-12 18:56:03 pid:21066 Workerman[./php54n/test.php] stop success
+2019-04-12 18:56:03 pid:21067 Workerman[./php54n/game2.php] stop 
+2019-04-12 18:56:03 pid:21067 Workerman[./php54n/game2.php] is stoping ...
+2019-04-12 18:56:03 pid:20960 Workerman[game2.php] stopping ...
+2019-04-12 18:56:03 pid:20960 Workerman[game2.php] has been stopped
+2019-04-12 18:56:03 pid:21067 Workerman[./php54n/game2.php] stop success
+2019-04-12 18:56:03 pid:21068 Workerman[./php54n/game1.php] stop 
+2019-04-12 18:56:03 pid:21068 Workerman[./php54n/game1.php] is stoping ...
+2019-04-12 18:56:03 pid:20963 Workerman[game1.php] stopping ...
+2019-04-12 18:56:03 pid:20963 Workerman[game1.php] has been stopped
+2019-04-12 18:56:03 pid:21068 Workerman[./php54n/game1.php] stop success
+2019-04-12 18:56:03 pid:21069 Workerman[./php54n/game5.php] stop 
+2019-04-12 18:56:03 pid:21069 Workerman[./php54n/game5.php] is stoping ...
+2019-04-12 18:56:03 pid:20967 Workerman[game5.php] stopping ...
+2019-04-12 18:56:03 pid:20967 Workerman[game5.php] has been stopped
+2019-04-12 18:56:03 pid:21069 Workerman[./php54n/game5.php] stop success
+2019-04-12 18:56:03 pid:21070 Workerman[./php54n/game10.php] stop 
+2019-04-12 18:56:03 pid:21070 Workerman[./php54n/game10.php] is stoping ...
+2019-04-12 18:56:03 pid:20971 Workerman[game10.php] stopping ...
+2019-04-12 18:56:03 pid:20971 Workerman[game10.php] has been stopped
+2019-04-12 18:56:03 pid:21070 Workerman[./php54n/game10.php] stop success
+2019-04-12 18:56:03 pid:21071 Workerman[./php54n/game3.php] stop 
+2019-04-12 18:56:03 pid:21071 Workerman[./php54n/game3.php] is stoping ...
+2019-04-12 18:56:03 pid:20976 Workerman[game3.php] stopping ...
+2019-04-12 18:56:03 pid:20976 Workerman[game3.php] has been stopped
+2019-04-12 18:56:03 pid:21071 Workerman[./php54n/game3.php] stop success
+2019-04-12 18:56:03 pid:21072 Workerman[./php54n/game14.php] stop 
+2019-04-12 18:56:03 pid:21072 Workerman[./php54n/game14.php] is stoping ...
+2019-04-12 18:56:03 pid:20980 Workerman[game14.php] stopping ...
+2019-04-12 18:56:03 pid:20980 Workerman[game14.php] has been stopped
+2019-04-12 18:56:03 pid:21072 Workerman[./php54n/game14.php] stop success
+2019-04-12 18:56:03 pid:21073 Workerman[./php54n/game4.php] stop 
+2019-04-12 18:56:03 pid:21073 Workerman[./php54n/game4.php] is stoping ...
+2019-04-12 18:56:03 pid:20984 Workerman[game4.php] stopping ...
+2019-04-12 18:56:03 pid:20984 Workerman[game4.php] has been stopped
+2019-04-12 18:56:03 pid:21073 Workerman[./php54n/game4.php] stop success
+2019-04-12 18:56:03 pid:21074 Workerman[./php54n/game15.php] stop 
+2019-04-12 18:56:03 pid:21074 Workerman[./php54n/game15.php] is stoping ...
+2019-04-12 18:56:03 pid:20988 Workerman[game15.php] stopping ...
+2019-04-12 18:56:03 pid:20988 Workerman[game15.php] has been stopped
+2019-04-12 18:56:03 pid:21074 Workerman[./php54n/game15.php] stop success
+2019-04-12 18:56:03 pid:21075 Workerman[./php54n/game6.php] stop 
+2019-04-12 18:56:03 pid:21075 Workerman[./php54n/game6.php] is stoping ...
+2019-04-12 18:56:03 pid:20991 Workerman[game6.php] stopping ...
+2019-04-12 18:56:03 pid:20991 Workerman[game6.php] has been stopped
+2019-04-12 18:56:03 pid:21075 Workerman[./php54n/game6.php] stop success
+2019-04-12 18:56:03 pid:21076 Workerman[./php54n/game16.php] stop 
+2019-04-12 18:56:03 pid:21076 Workerman[./php54n/game16.php] is stoping ...
+2019-04-12 18:56:03 pid:20995 Workerman[game16.php] stopping ...
+2019-04-12 18:56:03 pid:20995 Workerman[game16.php] has been stopped
+2019-04-12 18:56:03 pid:21076 Workerman[./php54n/game16.php] stop success
+2019-04-12 18:56:03 pid:21077 Workerman[./php54n/game17.php] stop 
+2019-04-12 18:56:03 pid:21077 Workerman[./php54n/game17.php] is stoping ...
+2019-04-12 18:56:03 pid:21000 Workerman[game17.php] stopping ...
+2019-04-12 18:56:03 pid:21000 Workerman[game17.php] has been stopped
+2019-04-12 18:56:03 pid:21077 Workerman[./php54n/game17.php] stop success
+2019-04-12 18:56:03 pid:21078 Workerman[./php54n/game26.php] stop 
+2019-04-12 18:56:03 pid:21078 Workerman[./php54n/game26.php] is stoping ...
+2019-04-12 18:56:03 pid:21004 Workerman[game26.php] stopping ...
+2019-04-12 18:56:03 pid:21004 Workerman[game26.php] has been stopped
+2019-04-12 18:56:03 pid:21078 Workerman[./php54n/game26.php] stop success
+2019-04-12 18:56:03 pid:21079 Workerman[./php54n/game27.php] stop 
+2019-04-12 18:56:03 pid:21079 Workerman[./php54n/game27.php] is stoping ...
+2019-04-12 18:56:03 pid:21008 Workerman[game27.php] stopping ...
+2019-04-12 18:56:03 pid:21008 Workerman[game27.php] has been stopped
+2019-04-12 18:56:03 pid:21079 Workerman[./php54n/game27.php] stop success
+2019-04-12 18:56:03 pid:21080 Workerman[./php54n/game19.php] stop 
+2019-04-12 18:56:03 pid:21080 Workerman[./php54n/game19.php] is stoping ...
+2019-04-12 18:56:03 pid:21012 Workerman[game19.php] stopping ...
+2019-04-12 18:56:03 pid:21012 Workerman[game19.php] has been stopped
+2019-04-12 18:56:03 pid:21080 Workerman[./php54n/game19.php] stop success
+2019-04-12 18:56:03 pid:21081 Workerman[./php54n/game23.php] stop 
+2019-04-12 18:56:03 pid:21081 Workerman[./php54n/game23.php] is stoping ...
+2019-04-12 18:56:03 pid:21016 Workerman[game23.php] stopping ...
+2019-04-12 18:56:03 pid:21016 Workerman[game23.php] has been stopped
+2019-04-12 18:56:03 pid:21081 Workerman[./php54n/game23.php] stop success
+2019-04-12 18:56:03 pid:21082 Workerman[./php54n/game22.php] stop 
+2019-04-12 18:56:03 pid:21082 Workerman[./php54n/game22.php] is stoping ...
+2019-04-12 18:56:03 pid:21020 Workerman[game22.php] stopping ...
+2019-04-12 18:56:03 pid:21020 Workerman[game22.php] has been stopped
+2019-04-12 18:56:03 pid:21082 Workerman[./php54n/game22.php] stop success
+2019-04-12 18:56:03 pid:21083 Workerman[./php54n/game20.php] stop 
+2019-04-12 18:56:03 pid:21083 Workerman[./php54n/game20.php] is stoping ...
+2019-04-12 18:56:03 pid:21024 Workerman[game20.php] stopping ...
+2019-04-12 18:56:03 pid:21024 Workerman[game20.php] has been stopped
+2019-04-12 18:56:03 pid:21083 Workerman[./php54n/game20.php] stop success
+2019-04-12 18:56:03 pid:21084 Workerman[./php54n/game21.php] stop 
+2019-04-12 18:56:03 pid:21084 Workerman[./php54n/game21.php] is stoping ...
+2019-04-12 18:56:03 pid:21028 Workerman[game21.php] stopping ...
+2019-04-12 18:56:03 pid:21028 Workerman[game21.php] has been stopped
+2019-04-12 18:56:03 pid:21084 Workerman[./php54n/game21.php] stop success
+2019-04-12 18:56:03 pid:21085 Workerman[./php54n/game18.php] stop 
+2019-04-12 18:56:03 pid:21085 Workerman[./php54n/game18.php] is stoping ...
+2019-04-12 18:56:03 pid:21031 Workerman[game18.php] stopping ...
+2019-04-12 18:56:03 pid:21031 Workerman[game18.php] has been stopped
+2019-04-12 18:56:03 pid:21085 Workerman[./php54n/game18.php] stop success
+2019-04-12 18:56:11 pid:21088 Workerman[./server.php] stop 
+2019-04-12 18:56:11 pid:21088 Workerman[./server.php] not run
+2019-04-12 18:56:11 pid:21090 Workerman[./php54n/test.php] stop 
+2019-04-12 18:56:11 pid:21090 Workerman[./php54n/test.php] not run
+2019-04-12 18:56:11 pid:21091 Workerman[./php54n/game2.php] stop 
+2019-04-12 18:56:11 pid:21091 Workerman[./php54n/game2.php] not run
+2019-04-12 18:56:11 pid:21092 Workerman[./php54n/game1.php] stop 
+2019-04-12 18:56:11 pid:21092 Workerman[./php54n/game1.php] not run
+2019-04-12 18:56:11 pid:21093 Workerman[./php54n/game5.php] stop 
+2019-04-12 18:56:11 pid:21093 Workerman[./php54n/game5.php] not run
+2019-04-12 18:56:11 pid:21094 Workerman[./php54n/game10.php] stop 
+2019-04-12 18:56:11 pid:21094 Workerman[./php54n/game10.php] not run
+2019-04-12 18:56:11 pid:21095 Workerman[./php54n/game3.php] stop 
+2019-04-12 18:56:11 pid:21095 Workerman[./php54n/game3.php] not run
+2019-04-12 18:56:11 pid:21096 Workerman[./php54n/game14.php] stop 
+2019-04-12 18:56:11 pid:21096 Workerman[./php54n/game14.php] not run
+2019-04-12 18:56:11 pid:21097 Workerman[./php54n/game4.php] stop 
+2019-04-12 18:56:11 pid:21097 Workerman[./php54n/game4.php] not run
+2019-04-12 18:56:11 pid:21098 Workerman[./php54n/game15.php] stop 
+2019-04-12 18:56:11 pid:21098 Workerman[./php54n/game15.php] not run
+2019-04-12 18:56:11 pid:21099 Workerman[./php54n/game6.php] stop 
+2019-04-12 18:56:11 pid:21099 Workerman[./php54n/game6.php] not run
+2019-04-12 18:56:12 pid:21100 Workerman[./php54n/game16.php] stop 
+2019-04-12 18:56:12 pid:21100 Workerman[./php54n/game16.php] not run
+2019-04-12 18:56:12 pid:21101 Workerman[./php54n/game17.php] stop 
+2019-04-12 18:56:12 pid:21101 Workerman[./php54n/game17.php] not run
+2019-04-12 18:56:12 pid:21102 Workerman[./php54n/game26.php] stop 
+2019-04-12 18:56:12 pid:21102 Workerman[./php54n/game26.php] not run
+2019-04-12 18:56:12 pid:21103 Workerman[./php54n/game27.php] stop 
+2019-04-12 18:56:12 pid:21103 Workerman[./php54n/game27.php] not run
+2019-04-12 18:56:12 pid:21104 Workerman[./php54n/game19.php] stop 
+2019-04-12 18:56:12 pid:21104 Workerman[./php54n/game19.php] not run
+2019-04-12 18:56:12 pid:21105 Workerman[./php54n/game23.php] stop 
+2019-04-12 18:56:12 pid:21105 Workerman[./php54n/game23.php] not run
+2019-04-12 18:56:12 pid:21106 Workerman[./php54n/game22.php] stop 
+2019-04-12 18:56:12 pid:21106 Workerman[./php54n/game22.php] not run
+2019-04-12 18:56:12 pid:21107 Workerman[./php54n/game20.php] stop 
+2019-04-12 18:56:12 pid:21107 Workerman[./php54n/game20.php] not run
+2019-04-12 18:56:12 pid:21108 Workerman[./php54n/game21.php] stop 
+2019-04-12 18:56:12 pid:21108 Workerman[./php54n/game21.php] not run
+2019-04-12 18:56:12 pid:21109 Workerman[./php54n/game18.php] stop 
+2019-04-12 18:56:12 pid:21109 Workerman[./php54n/game18.php] not run
+2019-04-12 18:56:18 pid:21112 Workerman[./server.php] start in DEBUG mode
+2019-04-12 18:56:47 pid:21112 Workerman[server.php] stopping ...
+2019-04-12 18:56:47 pid:21112 Workerman[server.php] has been stopped
+2019-04-12 18:56:47 pid:21115 Workerman[./php54n/test.php] start in DAEMON mode
+2019-04-12 18:56:47 pid:21118 Workerman[./php54n/game2.php] start in DAEMON mode
+2019-04-12 18:56:47 pid:21121 Workerman[./php54n/game1.php] start in DAEMON mode
+2019-04-12 18:56:47 pid:21125 Workerman[./php54n/game5.php] start in DAEMON mode
+2019-04-12 18:56:47 pid:21129 Workerman[./php54n/game10.php] start in DAEMON mode
+2019-04-12 18:56:47 pid:21133 Workerman[./php54n/game3.php] start in DAEMON mode
+2019-04-12 18:56:47 pid:21137 Workerman[./php54n/game14.php] start in DAEMON mode
+2019-04-12 18:56:47 pid:21141 Workerman[./php54n/game4.php] start in DAEMON mode
+2019-04-12 18:56:48 pid:21145 Workerman[./php54n/game15.php] start in DAEMON mode
+2019-04-12 18:56:48 pid:21149 Workerman[./php54n/game6.php] start in DAEMON mode
+2019-04-12 18:56:48 pid:21153 Workerman[./php54n/game16.php] start in DAEMON mode
+2019-04-12 18:56:48 pid:21158 Workerman[./php54n/game17.php] start in DAEMON mode
+2019-04-12 18:56:48 pid:21161 Workerman[./php54n/game26.php] start in DAEMON mode
+2019-04-12 18:56:48 pid:21166 Workerman[./php54n/game27.php] start in DAEMON mode
+2019-04-12 18:56:48 pid:21169 Workerman[./php54n/game19.php] start in DAEMON mode
+2019-04-12 18:56:48 pid:21173 Workerman[./php54n/game23.php] start in DAEMON mode
+2019-04-12 18:56:48 pid:21178 Workerman[./php54n/game22.php] start in DAEMON mode
+2019-04-12 18:56:48 pid:21181 Workerman[./php54n/game20.php] start in DAEMON mode
+2019-04-12 18:56:48 pid:21185 Workerman[./php54n/game21.php] start in DAEMON mode
+2019-04-12 18:56:48 pid:21190 Workerman[./php54n/game18.php] start in DAEMON mode
