@@ -96,6 +96,7 @@ class IndexController extends HomebaseController {
      }
 
     public function room() {
+        exit('ddd');
         $user=$this->user;
         $token=md5($this->user['id'].time());
         $save['token']=$token;
@@ -146,7 +147,7 @@ class IndexController extends HomebaseController {
                 $dkxx['gz2'][]=$value;
             }
         }
-        exit('ddd');
+
         $this->assign('fzuser',$fzuser);
         $this->assign('mayuser',$mayuser);
 
