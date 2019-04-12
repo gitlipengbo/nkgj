@@ -1,2 +1,2 @@
-php ./server.php start
+php ./server.php start -d
 ./run.sh
