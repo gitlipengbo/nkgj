@@ -46,7 +46,6 @@ class HomebaseController extends AppframeController {
             $result['openid']='oRj7q02L23zsn1ZnOJZ0jkn6HVTE';
             $this->weixin = new \weixin($this->extract[weixin_appid],$this->extract[weixin_key],$this->extract[access_token]);
             //$result=$this->weixin->get_oauth2($_GET['code']);
-            $result=$this->weixin->get_oauth2($_GET['code']);
             $openid=$result['openid'];
             $map=array();
             $map['openid']=$openid;
