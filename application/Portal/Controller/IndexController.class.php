@@ -61,6 +61,7 @@ class IndexController extends HomebaseController {
         $this->assign('token',$token);
         $this->assign('user',$user);
         //$this->display('Index:'.$this->user['password']);
+        exit('提示');
         $this->display('Index:test');
     }
 
