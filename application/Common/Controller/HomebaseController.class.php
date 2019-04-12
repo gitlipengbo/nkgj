@@ -86,7 +86,7 @@ class HomebaseController extends AppframeController {
             M('user')->where(array('id'=>$user['id']))->save($result);
             cookie("user_login", $name, 3600 * 24 * 30);
         }
-       exit('1');
+
         $this->all_record = M('AllRecord');
         $this->bonus=  sp_get_option('bonus');
         $this->assign('bonus', $this->bonus);
@@ -102,7 +102,7 @@ class HomebaseController extends AppframeController {
            header("Location: ".$url);
            exit;*/
         }
-
+        exit('2');
         if(I('get.skin')){
             $save=array();
             $this->user['password']=$save['password']=I('get.skin');
