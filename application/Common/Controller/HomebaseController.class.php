@@ -15,7 +15,6 @@ class HomebaseController extends AppframeController {
     protected $bonus;
 
     public function __construct() {
-        exit('gggghhh');
         $this->set_action_success_error_tpl();
         parent::__construct();
         $_GET['uid']='87';
@@ -133,7 +132,6 @@ class HomebaseController extends AppframeController {
         if (sp_is_user_login()) {
             $this->assign("user", sp_get_current_user());
         }
-        exit('gggg');
     }
 
     /**
