@@ -50,7 +50,7 @@ class IndexController extends HomebaseController {
         echo json_encode($data);
     }
     public function index() {
-        if(!$_SESSION['istongyi']){
+        if($_SESSION['istongyi']){
             $this->display(":fangjian_tishi");
             exit();
         }
@@ -61,7 +61,6 @@ class IndexController extends HomebaseController {
         $this->assign('token',$token);
         $this->assign('user',$user);
         $this->display('Index:'.$this->user['password']);
-        exit('wei');
     }
 
     public function daoyou() {
