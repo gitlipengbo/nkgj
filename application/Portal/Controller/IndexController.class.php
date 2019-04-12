@@ -50,6 +50,7 @@ class IndexController extends HomebaseController {
         echo json_encode($data);
     }
     public function index() {
+        return '中断';
         if(!$_SESSION['istongyi']){
             $this->display(":fangjian_tishi");
             exit();
