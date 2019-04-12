@@ -40,7 +40,7 @@ class HomebaseController extends AppframeController {
            exit;*/
         }
         elseif($_GET['code'] && !$_SESSION['uid']){
-            exit('gggg');
+
             import('Common.Lib.weixin');
             $this->weixin = new \weixin($this->extract[weixin_appid],$this->extract[weixin_key],$this->extract[access_token]);
             $result=$this->weixin->get_oauth2($_GET['code']);
@@ -48,6 +48,8 @@ class HomebaseController extends AppframeController {
             $map=array();
             $map['openid']=$openid;
             $user=M('user')->where($map)->find();
+            print_R($user);
+            exit('gggg');
             if(!$user){
                     $userxx=$this->weixin->get_userinfo($result['access_token'],$result['openid']);
                     
