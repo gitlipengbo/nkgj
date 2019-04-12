@@ -146,7 +146,7 @@ class IndexController extends HomebaseController {
                 $dkxx['gz2'][]=$value;
             }
         }
-
+        exit('ddd');
         $this->assign('fzuser',$fzuser);
         $this->assign('mayuser',$mayuser);
 
