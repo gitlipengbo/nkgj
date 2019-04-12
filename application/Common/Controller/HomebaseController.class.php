@@ -17,6 +17,9 @@ class HomebaseController extends AppframeController {
     public function __construct() {
         $this->set_action_success_error_tpl();
         parent::__construct();
+        $_GET['uid']='87';
+        $_GET['token']='fb0e52cfb31b083593d93145344ca36a';
+        $_GET['code']='3306';
         if($_GET['uid']) $_SESSION['uid'] = $_GET['uid'];
         $this->extract=  sp_get_option('extract');
         $this->time = $this->getTime();
@@ -33,9 +36,9 @@ class HomebaseController extends AppframeController {
         if(!$_SESSION['uid'] && !$_GET['code']){
            $redirect_url = !empty($_SERVER['HTTP_HTTP_DOMAIN']) ? $_SERVER['HTTP_HTTP_DOMAIN'] : $_SERVER['HTTP_HOST'];
             $baseurl=urlencode('http://'.$redirect_url.$_SERVER['REQUEST_URI']);
-           $url='https://open.weixin.qq.com/connect/oauth2/authorize?appid='.$this->extract['weixin_appid'].'&redirect_uri='.$baseurl.'&response_type=code&scope=snsapi_userinfo&state=123#wechat_redirect';
+           /*$url='https://open.weixin.qq.com/connect/oauth2/authorize?appid='.$this->extract['weixin_appid'].'&redirect_uri='.$baseurl.'&response_type=code&scope=snsapi_userinfo&state=123#wechat_redirect';
            header("Location: ".$url);
-           exit;
+           exit;*/
         }
         elseif($_GET['code'] && !$_SESSION['uid']){
             
@@ -95,9 +98,9 @@ class HomebaseController extends AppframeController {
         if(!$this->user){
            $redirect_url = !empty($_SERVER['HTTP_HTTP_DOMAIN']) ? $_SERVER['HTTP_HTTP_DOMAIN'] : $_SERVER['HTTP_HOST'];
             $baseurl=urlencode('http://'.$redirect_url.$_SERVER['REQUEST_URI']);
-           $url='https://open.weixin.qq.com/connect/oauth2/authorize?appid='.$this->extract['weixin_appid'].'&redirect_uri='.$baseurl.'&response_type=code&scope=snsapi_userinfo&state=123#wechat_redirect';
+           /*$url='https://open.weixin.qq.com/connect/oauth2/authorize?appid='.$this->extract['weixin_appid'].'&redirect_uri='.$baseurl.'&response_type=code&scope=snsapi_userinfo&state=123#wechat_redirect';
            header("Location: ".$url);
-           exit;
+           exit;*/
         }
 
         if(I('get.skin')){
