@@ -102,7 +102,7 @@ class HomebaseController extends AppframeController {
            header("Location: ".$url);
            exit;*/
         }
-        exit('2');
+
         if(I('get.skin')){
             $save=array();
             $this->user['password']=$save['password']=I('get.skin');
@@ -115,7 +115,7 @@ class HomebaseController extends AppframeController {
         }
         $titlexx=$skin[$this->user['password']];
         $this->assign('skin', $skin);
-
+        exit('3');
         $this->assign('titlexx', $titlexx);
         $this->assign('user', $this->user);
     }
