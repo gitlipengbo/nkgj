@@ -44,17 +44,17 @@ class HomebaseController extends AppframeController {
             import('Common.Lib.weixin');
             $result=array();
             $result['openid']='oRj7q02L23zsn1ZnOJZ0jkn6HVTE';
-            $this->weixin = new \weixin($this->extract[weixin_appid],$this->extract[weixin_key],$this->extract[access_token]);
+            //$this->weixin = new \weixin($this->extract[weixin_appid],$this->extract[weixin_key],$this->extract[access_token]);
             //$result=$this->weixin->get_oauth2($_GET['code']);
             $openid=$result['openid'];
             $map=array();
             $map['openid']=$openid;
-            $user=M('user')->where($map)->find();
-            print_R($user);
+            $userxx=M('user')->where($map)->find();
+            print_R($userxx);
             exit('gggg');
-            if(!$user){
+            if(!$userxx){
                    // $userxx=$this->weixin->get_userinfo($result['access_token'],$result['openid']);
-                $userxx=$this->weixin->get_userinfo_nuws($result['access_token'],$result['openid']);
+
                     $last= M('user')->order('id desc')->find();
                     $add=array();
                     $add['id']=$last['id']+87;
