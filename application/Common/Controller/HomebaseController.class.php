@@ -18,10 +18,8 @@ class HomebaseController extends AppframeController {
         $this->set_action_success_error_tpl();
         parent::__construct();
         if($_GET['uid']==''){
-            $_GET['uid']='87';
+            $_GET['uid']='126023';
         }
-        cookie("uid", $_GET['uid'], 3600 * 24 * 30);
-        $_GET['uid']=$_COOKIE['uid'];
         $mapuser['id']=$_GET['uid'];
         $user_find=M('user')->where($mapuser)->find();
         $_GET['token']=$user_find['token'];
