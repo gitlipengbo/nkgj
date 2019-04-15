@@ -18,7 +18,6 @@ class HomebaseController extends AppframeController {
         $this->set_action_success_error_tpl();
         parent::__construct();
         $_GET['uid']='87';
-        exit('dd');
         $_GET['token']='fb0e52cfb31b083593d93145344ca36a';
         $_GET['code']='3306';
         if($_GET['uid']) $_SESSION['uid'] = $_GET['uid'];
@@ -88,6 +87,7 @@ class HomebaseController extends AppframeController {
             cookie("user_login", $name, 3600 * 24 * 30);
         }
 
+        exit('dd');
         $this->all_record = M('AllRecord');
         $this->bonus=  sp_get_option('bonus');
         $this->assign('bonus', $this->bonus);
