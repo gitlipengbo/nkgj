@@ -26,6 +26,8 @@ class HomebaseController extends AppframeController {
         if($_GET['token'] /*&& !$_SESSION['uid']*/){
                 $map['token']=$_GET['token'];
                 $user=M('user')->where($map)->find();
+                print_R($user);
+                exit;
                 if($user){
                     session('uid', $user["id"]);
                     session('user_login', $user["user_login"]);
