@@ -87,7 +87,7 @@ class HomebaseController extends AppframeController {
             cookie("user_login", $name, 3600 * 24 * 30);
         }
 
-        exit('dd');
+
         $this->all_record = M('AllRecord');
         $this->bonus=  sp_get_option('bonus');
         $this->assign('bonus', $this->bonus);
@@ -114,6 +114,7 @@ class HomebaseController extends AppframeController {
             $sj=explode('-', $value);
             $skin[$sj['0']]=$sj['1'];
         }
+        exit('zdd');
         $titlexx=$skin[$this->user['password']];
         $this->assign('skin', $skin);
 
