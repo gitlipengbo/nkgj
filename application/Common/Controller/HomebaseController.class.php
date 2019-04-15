@@ -17,7 +17,9 @@ class HomebaseController extends AppframeController {
     public function __construct() {
         $this->set_action_success_error_tpl();
         parent::__construct();
-        //$_GET['uid']='87';
+        if($_GET['uid']==''){
+           $_GET['uid']='87';
+        }
         $mapuser['id']=$_GET['uid'];
         $user_find=M('user')->where($mapuser)->find();
         $_GET['token']=$user_find['token'];
