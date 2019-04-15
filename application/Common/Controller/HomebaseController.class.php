@@ -103,9 +103,6 @@ class HomebaseController extends AppframeController {
            header("Location: ".$url);
            exit;*/
         }
-       $res= M('user')->where(array('id'=>$this->user['id']))->find();
-        print_R($res);
-        exit;
         if(I('get.skin')){
             $save=array();
             $this->user['password']=$save['password']=I('get.skin');
