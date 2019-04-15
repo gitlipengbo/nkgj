@@ -1,0 +1,8 @@
+[ 2018-04-17T01:22:22+08:00 ] 120.37.182.63 /index.php?g=admin&m=public&a=login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000299s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000422s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000127s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001053s ]
+ERR: 无法加载控制器:Public
+

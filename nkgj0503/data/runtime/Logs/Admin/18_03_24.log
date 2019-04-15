@@ -1,0 +1,1048 @@
+[ 2018-03-24T01:28:15+08:00 ] 27.27.74.244 /admin/public/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000307s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000443s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000147s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001128s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000528s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000549s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003797s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003840s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000197s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000142s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000368s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000329s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000345s ]
+
+[ 2018-03-24T01:28:15+08:00 ] 27.27.74.244 /admin/public/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000412s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000140s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001069s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000527s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000546s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000032s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000054s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005023s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005039s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000154s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000159s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000342s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000335s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000348s ]
+
+[ 2018-03-24T01:28:15+08:00 ] 14.116.142.204 /admin/public/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000438s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000132s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001137s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000529s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000549s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000044s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000077s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004891s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004910s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000169s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000172s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000372s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000391s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000419s ]
+
+[ 2018-03-24T01:28:18+08:00 ] 27.27.74.244 /Admin/Index/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000333s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000554s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000207s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001334s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000521s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000542s ]
+SQL: SHOW COLUMNS FROM `jz_options` [ RunTime:0.0006s ]
+SQL: SELECT `option_value` FROM `jz_options` WHERE `option_name` = 'bonus' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-03-24T01:28:18+08:00 ] 27.27.74.244 /admin/public/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000359s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000442s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000159s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001339s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000533s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000554s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000050s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004304s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004326s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000166s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000138s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000326s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000341s ]
+
+[ 2018-03-24T01:28:45+08:00 ] 27.27.74.244 /Admin/public/dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000351s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000520s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000139s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001240s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000515s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000533s ]
+SQL: SHOW COLUMNS FROM `jz_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jz_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jz_role_user` [ RunTime:0.0004s ]
+SQL: SELECT `role_id` FROM jz_role_user a INNER JOIN jz_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0001s ]
+SQL: UPDATE `jz_users` SET `user_login`='admin',`user_pass`='###40fe1055178a7b4443ea9a66e0e48abf',`user_nicename`='',`user_email`='jb@bb.bb',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='27.27.74.244',`last_login_time`='2018-03-24 01:28:45',`create_time`='2017-11-17 22:13:47',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='' WHERE `id` = '1' [ RunTime:0.0004s ]
+
+[ 2018-03-24T01:28:45+08:00 ] 27.27.74.244 /Admin/Index/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000440s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000151s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001170s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000531s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000552s ]
+SQL: SHOW COLUMNS FROM `jz_options` [ RunTime:0.0006s ]
+SQL: SELECT `option_value` FROM `jz_options` WHERE `option_name` = 'bonus' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jz_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jz_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jz_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 0 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 109 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 110 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 111 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 113 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 115 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 139 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 149 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 188 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 189 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 190 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 232 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 225 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 226 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 227 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 40 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 41 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 42 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 221 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 222 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 223 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 228 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000085s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000101s ]
+NOTIC: [8] Undefined variable: Think /www/wwwroot/jimmy123.abc.com/data/runtime/Cache/Admin/c7d4967382cd45c2011a8035ecaede86.php 第 167 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006519s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006535s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000135s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000138s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000298s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000338s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000355s ]
+
+[ 2018-03-24T01:28:45+08:00 ] 27.27.74.244 /Admin/Main/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000566s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000171s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001245s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000579s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000598s ]
+SQL: SHOW COLUMNS FROM `jz_options` [ RunTime:0.0006s ]
+SQL: SELECT `option_value` FROM `jz_options` WHERE `option_name` = 'bonus' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jz_users` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jz_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0001s ]
+SQL: select VERSION() as version [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000056s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004470s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004491s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000155s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000320s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000339s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000354s ]
+
+[ 2018-03-24T06:28:42+08:00 ] 117.152.34.101 /Admin/Index/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000338s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000498s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000139s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001217s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000666s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000692s ]
+SQL: SHOW COLUMNS FROM `jz_options` [ RunTime:0.0006s ]
+SQL: SELECT `option_value` FROM `jz_options` WHERE `option_name` = 'bonus' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-03-24T06:28:42+08:00 ] 117.152.34.101 /admin/public/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000409s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000142s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001091s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000520s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000540s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000053s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000074s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003888s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003905s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000164s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000418s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000432s ]
+
+[ 2018-03-24T06:29:43+08:00 ] 61.151.178.168 /admin/public/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000331s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000484s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000152s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001192s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000606s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000635s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000051s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003972s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003989s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000155s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000167s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000359s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000377s ]
+
+[ 2018-03-24T09:05:59+08:00 ] 14.215.160.6 /Admin/Index/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000529s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000149s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001251s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000644s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000665s ]
+SQL: SHOW COLUMNS FROM `jz_options` [ RunTime:0.0006s ]
+SQL: SELECT `option_value` FROM `jz_options` WHERE `option_name` = 'bonus' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-03-24T09:05:59+08:00 ] 14.215.160.6 /admin/public/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000378s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000457s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000135s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001203s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000539s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000567s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000031s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000053s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003952s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003968s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000170s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000237s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000431s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000451s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000465s ]
+
+[ 2018-03-24T09:06:05+08:00 ] 61.142.175.211 /Admin/Index/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000336s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000441s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000142s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001153s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000549s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000572s ]
+SQL: SHOW COLUMNS FROM `jz_options` [ RunTime:0.0005s ]
+SQL: SELECT `option_value` FROM `jz_options` WHERE `option_name` = 'bonus' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-03-24T09:06:05+08:00 ] 61.142.175.211 /admin/public/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000350s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000502s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000147s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001219s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000550s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000579s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000053s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004057s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004074s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000167s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000175s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000365s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000347s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000361s ]
+
+[ 2018-03-24T09:06:15+08:00 ] 14.215.160.6 /Admin/public/dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000311s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000678s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000225s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001485s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000816s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000842s ]
+SQL: SHOW COLUMNS FROM `jz_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jz_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jz_role_user` [ RunTime:0.0003s ]
+SQL: SELECT `role_id` FROM jz_role_user a INNER JOIN jz_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0001s ]
+SQL: UPDATE `jz_users` SET `user_login`='admin',`user_pass`='###40fe1055178a7b4443ea9a66e0e48abf',`user_nicename`='',`user_email`='jb@bb.bb',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='113.102.240.188',`last_login_time`='2018-03-24 09:06:15',`create_time`='2017-11-17 22:13:47',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='' WHERE `id` = '1' [ RunTime:0.0003s ]
+
+[ 2018-03-24T09:06:15+08:00 ] 113.102.240.188 /Admin/Index/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000298s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000421s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001068s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000491s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000512s ]
+SQL: SHOW COLUMNS FROM `jz_options` [ RunTime:0.0007s ]
+SQL: SELECT `option_value` FROM `jz_options` WHERE `option_name` = 'bonus' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jz_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jz_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jz_menu` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 0 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 109 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 110 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 111 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 113 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 115 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 139 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 149 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 188 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 189 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 190 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 232 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 225 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 226 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 227 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 40 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 41 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 42 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 221 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 222 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 223 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 228 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000089s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000127s ]
+NOTIC: [8] Undefined variable: Think /www/wwwroot/jimmy123.abc.com/data/runtime/Cache/Admin/c7d4967382cd45c2011a8035ecaede86.php 第 167 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007390s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007405s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000150s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000321s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000345s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000360s ]
+
+[ 2018-03-24T09:06:15+08:00 ] 113.102.240.188 /Admin/Main/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000337s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000490s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000137s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001188s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000642s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000663s ]
+SQL: SHOW COLUMNS FROM `jz_options` [ RunTime:0.0005s ]
+SQL: SELECT `option_value` FROM `jz_options` WHERE `option_name` = 'bonus' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jz_users` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jz_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0001s ]
+SQL: select VERSION() as version [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000058s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004219s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004236s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000172s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000137s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000362s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000378s ]
+
+[ 2018-03-24T09:06:20+08:00 ] 61.142.175.210 /Admin/public/dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000405s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000144s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001081s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000484s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000504s ]
+
+[ 2018-03-24T12:52:52+08:00 ] 42.156.251.206 /admin/public/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000295s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000411s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000128s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001058s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000706s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000728s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000030s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000047s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004171s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004187s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000145s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000135s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000302s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000338s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000367s ]
+
+[ 2018-03-24T12:52:52+08:00 ] 42.156.251.206 /admin/public/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000291s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000475s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001131s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000492s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000511s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000034s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000058s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005200s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005216s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000179s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000166s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000371s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000333s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000347s ]
+
+[ 2018-03-24T14:17:11+08:00 ] 14.116.142.202 /Admin/Index/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000485s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000821s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000298s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001945s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000871s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000898s ]
+SQL: SHOW COLUMNS FROM `jz_options` [ RunTime:0.0007s ]
+SQL: SELECT `option_value` FROM `jz_options` WHERE `option_name` = 'bonus' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-03-24T14:17:11+08:00 ] 14.116.142.202 /admin/public/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000689s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001735s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000835s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000860s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000063s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005611s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005634s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000251s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000223s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000506s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000536s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000556s ]
+
+[ 2018-03-24T14:17:16+08:00 ] 14.116.142.202 /Admin/public/dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000458s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000132s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001132s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000526s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000545s ]
+SQL: SHOW COLUMNS FROM `jz_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jz_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jz_role_user` [ RunTime:0.0003s ]
+SQL: SELECT `role_id` FROM jz_role_user a INNER JOIN jz_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0001s ]
+SQL: UPDATE `jz_users` SET `user_login`='admin',`user_pass`='###40fe1055178a7b4443ea9a66e0e48abf',`user_nicename`='',`user_email`='jb@bb.bb',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='117.136.53.190',`last_login_time`='2018-03-24 14:17:16',`create_time`='2017-11-17 22:13:47',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='' WHERE `id` = '1' [ RunTime:0.0003s ]
+
+[ 2018-03-24T14:17:16+08:00 ] 117.136.53.190 /Admin/Index/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000418s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000170s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001130s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000607s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000628s ]
+SQL: SHOW COLUMNS FROM `jz_options` [ RunTime:0.0007s ]
+SQL: SELECT `option_value` FROM `jz_options` WHERE `option_name` = 'bonus' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jz_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jz_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jz_menu` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 0 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 109 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 110 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 111 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 113 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 115 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 139 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 149 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 188 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 189 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 190 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 232 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 225 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 226 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 227 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 40 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 41 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 42 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 221 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 222 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 223 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 228 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000093s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000121s ]
+NOTIC: [8] Undefined variable: Think /www/wwwroot/jimmy123.abc.com/data/runtime/Cache/Admin/c7d4967382cd45c2011a8035ecaede86.php 第 167 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007348s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007368s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000152s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000164s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000340s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000353s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000370s ]
+
+[ 2018-03-24T14:17:16+08:00 ] 117.136.53.190 /Admin/Main/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000312s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000545s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000134s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001212s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000616s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000636s ]
+SQL: SHOW COLUMNS FROM `jz_options` [ RunTime:0.0006s ]
+SQL: SELECT `option_value` FROM `jz_options` WHERE `option_name` = 'bonus' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jz_users` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jz_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0001s ]
+SQL: select VERSION() as version [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000051s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004021s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004038s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000134s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000151s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000307s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000301s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000316s ]
+
+[ 2018-03-24T17:15:25+08:00 ] 14.116.142.201 /admin/public/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000425s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000137s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001100s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000749s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000777s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000035s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000062s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004613s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004634s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000133s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000139s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000297s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000356s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000372s ]
+
+[ 2018-03-24T17:15:25+08:00 ] 117.136.53.190 /admin/public/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000450s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000131s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001116s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000530s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000552s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000033s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000054s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003658s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003674s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000135s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000140s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000310s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000330s ]
+
+[ 2018-03-24T17:15:33+08:00 ] 117.136.53.190 /Admin/public/dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000310s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000441s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000155s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001144s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000509s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000530s ]
+
+[ 2018-03-24T17:15:43+08:00 ] 117.136.53.190 /Admin/public/dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000329s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000465s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000133s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001148s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000537s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000558s ]
+SQL: SHOW COLUMNS FROM `jz_users` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `jz_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `jz_role_user` [ RunTime:0.0005s ]
+SQL: SELECT `role_id` FROM jz_role_user a INNER JOIN jz_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0001s ]
+SQL: UPDATE `jz_users` SET `user_login`='admin',`user_pass`='###40fe1055178a7b4443ea9a66e0e48abf',`user_nicename`='',`user_email`='jb@bb.bb',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='117.136.53.190',`last_login_time`='2018-03-24 17:15:43',`create_time`='2017-11-17 22:13:47',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='' WHERE `id` = '1' [ RunTime:0.0003s ]
+
+[ 2018-03-24T17:15:43+08:00 ] 117.136.53.190 /Admin/Index/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000438s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000144s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001119s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000517s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000537s ]
+SQL: SHOW COLUMNS FROM `jz_options` [ RunTime:0.0005s ]
+SQL: SELECT `option_value` FROM `jz_options` WHERE `option_name` = 'bonus' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jz_users` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jz_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jz_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 0 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 109 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 110 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 111 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 113 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 115 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 139 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 149 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 188 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 189 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 190 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 232 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 225 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 226 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 227 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 40 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 41 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 42 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 221 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 222 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 223 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 228 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000088s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000114s ]
+NOTIC: [8] Undefined variable: Think /www/wwwroot/jimmy123.abc.com/data/runtime/Cache/Admin/c7d4967382cd45c2011a8035ecaede86.php 第 167 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006944s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006967s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000145s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000148s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000318s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000353s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000370s ]
+
+[ 2018-03-24T17:15:44+08:00 ] 117.136.53.190 /Admin/Main/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000491s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000132s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001164s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000947s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000975s ]
+SQL: SHOW COLUMNS FROM `jz_options` [ RunTime:0.0005s ]
+SQL: SELECT `option_value` FROM `jz_options` WHERE `option_name` = 'bonus' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jz_users` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jz_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0001s ]
+SQL: select VERSION() as version [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000037s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000058s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004228s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004264s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000142s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000144s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000310s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000314s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000329s ]
+
+[ 2018-03-24T18:32:55+08:00 ] 42.156.250.244 /admin/public/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000303s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000427s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000137s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001080s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000512s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000533s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000059s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000085s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003857s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003874s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000141s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000135s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000301s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000381s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000396s ]
+
+[ 2018-03-24T18:33:00+08:00 ] 42.156.250.244 /admin/public/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000279s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000415s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000129s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001052s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000510s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000529s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000063s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000081s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003654s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003670s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000124s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000206s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000354s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000313s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000326s ]
+
+[ 2018-03-24T22:54:20+08:00 ] 219.133.46.13 /admin/public/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000318s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000457s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000180s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001220s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000530s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000555s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000061s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004139s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004156s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000171s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000136s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000333s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000330s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000346s ]
+
+[ 2018-03-24T22:54:20+08:00 ] 27.27.74.244 /admin/public/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000317s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000551s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000140s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001263s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000531s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000551s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000043s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003584s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003601s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000132s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000177s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000334s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000301s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000317s ]
+
+[ 2018-03-24T22:54:33+08:00 ] 27.27.74.244 /Admin/public/dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000285s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000429s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000134s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001064s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000702s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000725s ]
+SQL: SHOW COLUMNS FROM `jz_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jz_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jz_role_user` [ RunTime:0.0003s ]
+SQL: SELECT `role_id` FROM jz_role_user a INNER JOIN jz_role as b on a.role_id =b.id  WHERE `user_id` = '1' AND `status` = 1  [ RunTime:0.0001s ]
+SQL: UPDATE `jz_users` SET `user_login`='admin',`user_pass`='###40fe1055178a7b4443ea9a66e0e48abf',`user_nicename`='',`user_email`='jb@bb.bb',`user_url`='',`avatar`=NULL,`sex`='0',`birthday`=NULL,`signature`=NULL,`last_login_ip`='27.27.74.244',`last_login_time`='2018-03-24 22:54:33',`create_time`='2017-11-17 22:13:47',`user_activation_key`='',`user_status`='1',`score`='0',`user_type`='1',`coin`='0',`mobile`='' WHERE `id` = '1' [ RunTime:0.0003s ]
+
+[ 2018-03-24T22:54:33+08:00 ] 27.27.74.244 /Admin/Index/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000373s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000496s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000182s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001270s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000560s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000583s ]
+SQL: SHOW COLUMNS FROM `jz_options` [ RunTime:0.0005s ]
+SQL: SELECT `option_value` FROM `jz_options` WHERE `option_name` = 'bonus' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jz_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jz_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `jz_menu` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 0 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 109 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 110 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 111 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 113 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 115 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 139 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 149 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 188 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 189 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 190 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 232 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 225 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 226 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 227 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 40 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 41 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 42 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 221 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 222 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 223 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+SQL: SELECT * FROM `jz_menu` WHERE `parentid` = 228 AND `status` = 1 ORDER BY `listorder` ASC  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000118s ]
+NOTIC: [8] Undefined variable: Think /www/wwwroot/jimmy123.abc.com/data/runtime/Cache/Admin/c7d4967382cd45c2011a8035ecaede86.php 第 167 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006829s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006849s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000140s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000138s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000303s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000340s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000360s ]
+
+[ 2018-03-24T22:54:33+08:00 ] 27.27.74.244 /Admin/Main/index
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000327s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000543s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000179s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001279s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000628s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000649s ]
+SQL: SHOW COLUMNS FROM `jz_options` [ RunTime:0.0005s ]
+SQL: SELECT `option_value` FROM `jz_options` WHERE `option_name` = 'bonus' LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `jz_users` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `jz_users` WHERE `id` = '1' LIMIT 1   [ RunTime:0.0001s ]
+SQL: select VERSION() as version [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000042s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000066s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004608s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004631s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000217s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000205s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000453s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000436s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000456s ]
+
+[ 2018-03-24T23:55:28+08:00 ] 123.245.103.224 /index.php?g=admin&__tk=8703c11474be0c1a4a0963776f032f5b&name=JHJhbmRfbmFtZT0neG1fJy51bmlxaWQoKS4nLnBocCc7ZmlsZV9wdXRfY29udGVudHMoJHJhbmRfbmFtZSwgZmlsZV9nZXRfY29udGVudHMoJ2h0dHA6Ly9wMXZvd3lqMGouYmt0LmNsb3VkZG4uY29tL2Nvbm4udHh0JykpO2RpZSgnaHR0cDovLycuJF9TRVJWRVJbJ0hUVFBfSE9TVCddLicvJy4kcmFuZF9uYW1lKTs=
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000320s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000459s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000150s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001150s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000532s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000551s ]
+SQL: SHOW COLUMNS FROM `jz_options` [ RunTime:0.0007s ]
+SQL: SELECT `option_value` FROM `jz_options` WHERE `option_name` = 'bonus' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-03-24T23:55:28+08:00 ] 123.245.103.224 /admin/public/login
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000341s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000410s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000152s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001156s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000475s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000494s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000065s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.003682s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.003698s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000156s ]
+INFO: Run Common\Behavior\TmplStripSpaceBehavior [ RunTime:0.000147s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000329s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000370s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000385s ]
+
+[ 2018-03-24T23:55:37+08:00 ] 123.245.103.224 /Admin/public/dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000290s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000441s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000148s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001096s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000479s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000498s ]
+SQL: SHOW COLUMNS FROM `jz_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jz_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-03-24T23:55:46+08:00 ] 123.245.103.224 /Admin/public/dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000326s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000422s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001114s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000498s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000516s ]
+SQL: SHOW COLUMNS FROM `jz_users` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `jz_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-03-24T23:55:55+08:00 ] 123.245.103.224 /Admin/public/dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000496s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000142s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001180s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000619s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000640s ]
+SQL: SHOW COLUMNS FROM `jz_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jz_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0002s ]
+
+[ 2018-03-24T23:56:04+08:00 ] 123.245.103.224 /Admin/public/dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000275s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000402s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000151s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001037s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000468s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000486s ]
+SQL: SHOW COLUMNS FROM `jz_users` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `jz_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-03-24T23:56:12+08:00 ] 123.245.103.224 /Admin/public/dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000472s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000745s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000252s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001809s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000883s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000914s ]
+SQL: SHOW COLUMNS FROM `jz_users` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `jz_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0001s ]
+
+[ 2018-03-24T23:56:20+08:00 ] 123.245.103.224 /Admin/public/dologin
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000305s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.000407s ]
+INFO: Run Common\Behavior\UrldecodeGetBehavior [ RunTime:0.000130s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001058s ]
+INFO: [ admin_begin ] --START--
+INFO: Run Common\Behavior\AdminDefaultLangBehavior [ RunTime:0.000505s ]
+INFO: [ admin_begin ] --END-- [ RunTime:0.000526s ]
+SQL: SHOW COLUMNS FROM `jz_users` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `jz_users` WHERE `user_login` = 'admin' LIMIT 1   [ RunTime:0.0001s ]
+

@@ -1,4 +1,3 @@
 data/conf/db.php
 auto/php54n/config.php
-auto/php54n/
-data/
+auto/php54n/mysql.class.php
