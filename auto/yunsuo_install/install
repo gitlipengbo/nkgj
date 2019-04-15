@@ -1,0 +1,324 @@
+#!/bin/bash
+
+$cloud_uuid
+$cloud_name
+$cloud_passwd
+$listen_port
+$os_issue
+
+yunsuo_root_path=/usr/local/yunsuo_agent
+global_c=60
+program_name=$0
+options_count=$#
+
+function success()
+{
+	echo -e "\033[${global_c}G[\033[32m OK \033[0m]"
+}
+
+function fail()
+{
+	echo -e "\033[${global_c}G[\033[31m FAILED \033[0m]"
+}
+
+function notfound()
+{
+	echo -e "\033[${global_c}G[\033[33m NOT FOUND \033[0m]"
+}
+
+function warning()
+{
+	echo -e "\033[${global_c}G[\033[33m WARNING \033[0m]"
+}
+
+function welcome_info()
+{
+	echo "Welcome to install YUNSUO."
+	echo "If you encounter any problems during installation, you can use 'ctrl-c' to cancel."
+	echo ""
+}
+
+# 卸载残留
+function clear_residue()
+{
+	if [ -x ${yunsuo_root_path}/uninstall ];then
+		${yunsuo_root_path}/uninstall 2&> /dev/null
+	else
+		rm -rf ${yunsuo_root_path}
+	fi
+}
+
+# 信号处理
+function register_signal()
+{
+	trap "clear_residue && echo && echo 'Cancel install successed. Bye' && exit" INT
+}
+
+# 帮助
+function helper()
+{
+	echo "Usage: "
+	echo "  $program_name -u cloud_name -p cloud_passwd -l listen_port -U cloud_uuid -o os_issue"
+	echo "Options:"
+	echo "  -u: Cloud center username"
+	echo "  -p: Cloud center password"
+	echo "  -U: Cloud center UUID"
+	echo "  -l: Agent's listen port. default is 5555"
+	echo "  -o: Operation system type. surport centos, redhat, ubuntu, suse"
+}
+
+# 参数解析 
+function parse_options()
+{
+	if [ $options_count -gt 0 ];then
+		while getopts "u:p:U:l:o:h" opt
+		do
+			case $opt in
+				u)	cloud_name=$OPTARG ;;
+				p)	cloud_passwd=$OPTARG ;;
+				U)	cloud_uuid=$OPTARG ;;
+				l)	listen_port=$OPTARG ;;
+				o)	os_issue=$OPTARG ;;
+				h)	helper
+					exit ;;
+			esac
+		done
+	fi
+}
+
+# 检查安装包是否与系统版本匹配
+function check_arch()
+{
+	if [ `uname -m` != "x86_64" ];then
+		return 1
+	else
+		return 0
+	fi
+}
+
+# 检查系统版本
+function check_os_issue()
+{
+	if [ -z "$os_issue" ];then
+		if [ ! -z `find /usr/bin -name apt-get` ];then
+			os_issue="ubuntu"
+		elif [ ! -z `find /usr/bin -name yum` ];then
+			os_issue="centos"
+		elif [ ! -z `which YaST 2> /dev/null` ] || [ ! -z `which yast 2> /dev/null` ];then
+			os_issue="suse"
+		else
+			return 1
+		fi
+	else
+		if [ "$os_issue" != "centos" ] && [ "$os_issue" != "ubuntu" ] && [ "$os_issue" != "suse" ];then
+			return 1
+		fi
+	fi
+	
+	return 0
+}
+
+# 检查是否已经安装了产品
+function check_installed()
+{
+	if [ -d $yunsuo_root_path ];then
+		return 1
+	else
+		return 0
+	fi
+}
+
+# 检查驱动是否已经安装
+function check_dirvers()
+{
+	which lsmod 2&> /dev/null
+	if [ $? -ne 0 ];then
+		# 系统可能不存在lsmod命令，因此不做驱动检查，直接安装
+		return 0
+	fi
+
+	driver_not_uninstall=`lsmod | grep resguard_linux | grep -v grep | head -1 | awk '{print $1}'`
+	if [ ! -z "$driver_not_uninstall" ];then
+		return 1
+	fi
+	
+	return 0
+}
+
+# 检查SELinux是否关闭
+function check_selinux()
+{
+	if [ -f /etc/sysconfig/selinux ];then
+		chk_selinux=`/usr/sbin/sestatus -v | head -1 | awk '{print $3}'`
+		if [ "$chk_selinux" != "disabled" ] && [ "$chk_selinux" != "Disabled" ];then
+			return 1
+		fi
+	fi
+
+	return 0
+}
+
+# 检查网络是否通常(可从服务器下载)
+function check_network()
+{
+	if [ ! -z "$proxy_ip" ];then
+		return 0
+	fi
+
+	wget --timeout=15 update.yunsuo.com.cn/YSUpdate_Linux/networking_test 2> /dev/null
+	if [ ! -f networking_test ];then
+		return 1
+	else
+		rm -rf networking_test
+		return 0
+	fi
+}
+
+
+
+# 检查当前系统环境是否允许安装
+function check_installation_environment()
+{
+	echo -n "checking installation environment:"
+	
+	while true
+	do
+		# 检查包是否匹配
+		check_arch
+		if [ $? -ne 0 ];then
+			error_info="Installation package and system version mismatch, please confirm package"
+			break
+		fi
+
+		# 检查system issue
+		check_os_issue
+		if [ $? -ne 0 ];then
+			error_info="Installer could not detect system issue, please specify system issue to install."
+			break
+		fi
+		
+		# 检查是否已经安装过
+		check_installed
+		if [ $? -ne 0 ];then
+			error_info="Has been installed."
+			break
+		fi
+		
+		# 检查驱动
+		check_dirvers
+		if [ $? -ne 0 ];then
+			error_info="Drivers not uninstall, Please Reboot Your System and Install."
+			break
+		fi
+		
+		# 检查selinux
+		check_selinux
+		if [ $? -ne 0 ];then
+			error_info="Detected SELinux opening, close and then install."
+			break
+		fi
+		
+		# 检查网络
+		check_network
+		if [ $? -ne 0 ];then
+			echo ""
+			echo "Unable to connect to the download server, driver or a failed download, may affect the part function"
+		#	break 网络不通仅影响部分功能, 因此不需要退出安装
+		fi
+		
+		success
+		return 
+	done
+	
+	fail
+	echo ""
+	echo "Error: $error_info"
+	exit
+}
+
+function prepare_before_install()
+{
+	execute_path=$0
+	execute_path=`echo ${execute_path%%install}`
+
+	# 解压
+	echo -n "decompression package:"
+	mkdir ${yunsuo_root_path} 2> /dev/null
+	tar zxf ${execute_path}/src_lib.tar.gz -C ${yunsuo_root_path} 2> /dev/null
+
+	# 创建及修改必要文件
+	test ! -d /var/log && mkdir /var/log
+	
+	# 创建软链
+	test ! -d /usr/local/lib && mkdir /usr/local/lib
+	ln -s ${yunsuo_root_path}/libs /usr/local/lib/jlibs
+	
+	# 生成路径控制文件
+	echo "${yunsuo_root_path}" > /var/log/version_control
+	echo "server_name: yunsuo_agent_service" > ${yunsuo_root_path}/command_control
+	echo "guard_name: yunsuo_agent_guard" >> ${yunsuo_root_path}/command_control
+	echo "script_server: yunsuo" >> ${yunsuo_root_path}/command_control
+	echo "script_guard: yunsuo_guard" >> ${yunsuo_root_path}/command_control
+
+	# 需要用到的可执行文件+x
+	chmod +x ${yunsuo_root_path}/change_port
+	chmod +x ${yunsuo_root_path}/yunsuo_smart_tool.sh
+	chmod +x ${yunsuo_root_path}/register_cloud_center
+	chmod +x ${yunsuo_root_path}/uninstall_driver
+	chmod +x ${yunsuo_root_path}/setup_configure
+	chmod +x ${yunsuo_root_path}/YSUpdate
+	
+	success
+}
+
+# 绑定云中心
+function bind_cloud_account()
+{
+	if [ ! -z $cloud_uuid ];then
+		${yunsuo_root_path}/register_cloud_center $cloud_uuid
+	elif [ ! -z $cloud_name ] && [ ! -z $cloud_passwd ];then
+		${yunsuo_root_path}/register_cloud_center $cloud_name $cloud_passwd
+	else
+		${yunsuo_root_path}/register_cloud_center
+	fi
+}
+
+# 修改监听端口
+function update_listen_port()
+{
+	if [ ! -z "$listen_port" ];then
+		${yunsuo_root_path}/yunsuo_smart_tool.sh -l $listen_port
+	fi
+}
+
+# 配置云锁运行环境
+function execute_configure_script()
+{
+	cd ${yunsuo_root_path}
+	
+	# 生成configure_file文件, 该文件内容为具体的配置信息
+	test -f configure_file && rm -rf configure_file ; echo "1:normal:x64:$yunsuo_root_path:$os_issue" > configure_file
+	
+	export JHSE_SAFE_PATH=$yunsuo_root_path
+	export LANG="C"
+
+	# 下载驱动
+	./YSUpdate 1 $os_issue
+	
+	# 配置云锁
+	./setup_configure -c setup.xml -l runlog/setup.log -e "ALL" -t "ALL" -s safe -m cmdline 2>/dev/null
+
+	echo ""
+	echo "Install Yunsuo Success."
+}
+
+
+######################################################
+parse_options $*
+welcome_info
+register_signal
+check_installation_environment
+prepare_before_install
+bind_cloud_account
+update_listen_port
+execute_configure_script
