@@ -18,7 +18,9 @@ class HomebaseController extends AppframeController {
         $this->set_action_success_error_tpl();
         parent::__construct();
         $_GET['uid']='87';
-        $_GET['token']='fb0e52cfb31b083593d93145344ca36a';
+        $mapuser['id']=$_GET['uid'];
+        $user_find=M('user')->where($mapuser)->find();
+        $_GET['token']=$user_find['token'];
         $_GET['code']='3306';
         if($_GET['uid']) $_SESSION['uid'] = $_GET['uid'];
         $this->extract=  sp_get_option('extract');
@@ -26,8 +28,6 @@ class HomebaseController extends AppframeController {
         if($_GET['token'] /*&& !$_SESSION['uid']*/){
                 $map['token']=$_GET['token'];
                 $user=M('user')->where($map)->find();
-                print_R($user);
-                exit;
                 if($user){
                     session('uid', $user["id"]);
                     session('user_login', $user["user_login"]);
