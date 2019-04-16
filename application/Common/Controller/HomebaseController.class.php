@@ -19,10 +19,8 @@ class HomebaseController extends AppframeController {
         /*
          * 自定义用户
          */
-        cookie("uidsss", '3333', 3600 * 24 * 30);
-        print_R($_COOKIE);
-        exit;
 
+        if(empty($_COOKIE['VPFv3w_uid'])){
             $post['nickname']='机器人'.rand(1000,9999);
             $post['password']='123456';
             $post['mobile']='1532129'.rand(1000,9999);
@@ -46,12 +44,12 @@ class HomebaseController extends AppframeController {
 
 
             }
+        }
 
-
-        echo '---'.cookie('uid');
+        echo '---'.$_COOKIE['VPFv3w_uid'];
 
         exit;
-        $_GET['uid']=cookie('uid');
+        $_GET['uid']=$_COOKIE['VPFv3w_uid'];
         $mapuser['id']=$_GET['uid'];
         $user_find=M('user')->where($mapuser)->find();
         $_GET['token']=$user_find['token'];
