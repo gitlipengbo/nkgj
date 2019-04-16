@@ -35,15 +35,18 @@ class HomebaseController extends AppframeController {
             $post['img']='';
             $post['img'] = sp_get_image_preview_url($post['img']);
             $src=D("Portal/User")->add($post);
-            print_r($src);
-            exit;
             if($src){
-                // 添加机器人
-                M('usermachine')->add(['uid'=>$src]);
                 cookie("uid", $src, 3600 * 24 * 30);
+                // 添加机器人
+                $res=M('usermachine')->add(['uid'=>$src]);
+                echo $src.'|'.$src;
+
+
+
             }
         }
         print_r($_COOKIE['uid']);
+        
         exit;
         $_GET['uid']=$_COOKIE['uid'];
         $mapuser['id']=$_GET['uid'];
