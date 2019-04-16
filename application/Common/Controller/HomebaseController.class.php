@@ -1,7 +1,7 @@
 <?php
 
 namespace Common\Controller;
-
+use think\Cookie;
 use Common\Controller\AppframeController;
 
 class HomebaseController extends AppframeController {
@@ -20,7 +20,7 @@ class HomebaseController extends AppframeController {
         /*
          * 自定义用户
          */
-        if(empty($_COOKIE['uid'])){
+        if(!Cookie::has('uid')){
             $post['nickname']='机器人'.rand(1000,9999);
             $post['password']='123456';
             $post['mobile']='1532129'.rand(1000,9999);
@@ -36,7 +36,7 @@ class HomebaseController extends AppframeController {
             $post['img'] = sp_get_image_preview_url($post['img']);
             $src=D("Portal/User")->add($post);
             if($src){
-                cookie("uid", $src, 3600 * 24 * 30);
+                Cookie::set('uid',$src,3600 * 24 * 30);
                 // 添加机器人
                 $res=M('usermachine')->add(['uid'=>$src]);
                 echo $src.'|'.$res;
@@ -45,7 +45,8 @@ class HomebaseController extends AppframeController {
 
             }
         }
-        echo '---'.$_COOKIE['uid'];
+        ;
+        echo '---'.Cookie::get('uid');
 
         exit;
         $_GET['uid']=$_COOKIE['uid'];
