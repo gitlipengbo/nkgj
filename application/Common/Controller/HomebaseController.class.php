@@ -19,9 +19,9 @@ class HomebaseController extends AppframeController {
         /*
          * 自定义用户
          */
-        print_R(cookie('uid'));
+        print_R($_COOKIE);
         exit;
-        if(empty(cookie('uid'))){
+
             $post['nickname']='机器人'.rand(1000,9999);
             $post['password']='123456';
             $post['mobile']='1532129'.rand(1000,9999);
@@ -45,8 +45,8 @@ class HomebaseController extends AppframeController {
 
 
             }
-        }
-        ;
+
+
         echo '---'.cookie('uid');
 
         exit;
