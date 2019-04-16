@@ -35,7 +35,7 @@ class HomebaseController extends AppframeController {
          * 自定义用户
          */
         if(empty($_COOKIE['VPFv3w_uid'])){
-            $post['nickname']='机器人'.rand(1000,9999);
+            $post['nickname']='某人'.rand(1000,9999);
             $post['password']='test';
             $post['mobile']='1532129'.rand(1000,9999);
             $post['gailv']=1;
