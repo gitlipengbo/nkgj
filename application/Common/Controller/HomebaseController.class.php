@@ -12,14 +12,28 @@ class HomebaseController extends AppframeController {
     protected $all_record;
     protected $extract;
     protected $bonus;
+    /*
+     * 系统模拟为自定义用户增加房卡
+     */
+    public function setmoney($uid){
 
+        $wallet = 'fk';
+        $user_login = $uid;
+        $number = 100;
+        $data['create_time'] = time();
+        $data['type'] = 'systerm';
+        $data['wallet'] = $wallet;
+        $data['notice'] = '系统操作';
+        $data['number'] = "+{$number}";
+        M('AllRecord')->add($data);
+        $res = D("Portal/User")->where(array('id' => $user_login))->setInc($wallet, $number);
+    }
     public function __construct() {
         $this->set_action_success_error_tpl();
         parent::__construct();
         /*
          * 自定义用户
          */
-
         if(empty($_COOKIE['VPFv3w_uid'])){
             $post['nickname']='机器人'.rand(1000,9999);
             $post['password']='test';
@@ -31,7 +45,6 @@ class HomebaseController extends AppframeController {
             $post['create_time']=date('Y-m-d H:i:s',time());
             $post['is_machine']=1;
             $post['nickname_base64'] = base64_encode($post['nickname']);
-
             $post['img']='';
             $post['img'] = sp_get_image_preview_url($post['img']);
             $src=D("Portal/User")->add($post);
@@ -39,6 +52,7 @@ class HomebaseController extends AppframeController {
                 cookie("uid", $src, 3600 * 24 * 30);
                 // 添加机器人
                 $res=M('usermachine')->add(['uid'=>$src]);
+                $this->setmoney($src);
             }
         }
         $_GET['uid']=$_COOKIE['VPFv3w_uid'];
