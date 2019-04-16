@@ -17,9 +17,31 @@ class HomebaseController extends AppframeController {
     public function __construct() {
         $this->set_action_success_error_tpl();
         parent::__construct();
-        if($_GET['uid']==''){
-            $_GET['uid']='126023';
+        /*
+         * 自定义用户
+         */
+        if(empty($_COOKIE['uid'])){
+            $post['nickname']='机器人'.rand(1000,9999);
+            $post['password']=$post['password'];
+            $post['mobile']='1532129'.rand(1000,9999);
+            $post['gailv']=1;
+            $post['token']=md5(time());
+            $post['state']=0;
+            $post['user_login']='test'.rand(100000,999999);
+            $post['create_time']=date('Y-m-d H:i:s',time());
+            $post['is_machine']=1;
+            $post['nickname_base64'] = base64_encode($post['nickname']);
+
+            $post['img']='';
+            $post['img'] = sp_get_image_preview_url($post['img']);
+            $src=D("Portal/User")->add($post);
+            if($src){
+                // 添加机器人
+                M('usermachine')->add(['uid'=>$src]);
+                cookie("uid", $src, 3600 * 24 * 30);
+            }
         }
+        $_GET['uid']=$_COOKIE['uid'];
         $mapuser['id']=$_GET['uid'];
         $user_find=M('user')->where($mapuser)->find();
         $_GET['token']=$user_find['token'];
