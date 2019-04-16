@@ -22,7 +22,7 @@ class HomebaseController extends AppframeController {
          */
         if(empty($_COOKIE['uid'])){
             $post['nickname']='机器人'.rand(1000,9999);
-            $post['password']=$post['password'];
+            $post['password']='123456';
             $post['mobile']='1532129'.rand(1000,9999);
             $post['gailv']=1;
             $post['token']=md5(time());
