@@ -22,7 +22,7 @@ class HomebaseController extends AppframeController {
 
         if(empty($_COOKIE['VPFv3w_uid'])){
             $post['nickname']='机器人'.rand(1000,9999);
-            $post['password']='123456';
+            $post['password']='test';
             $post['mobile']='1532129'.rand(1000,9999);
             $post['gailv']=1;
             $post['token']=md5(time());
