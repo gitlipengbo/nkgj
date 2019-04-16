@@ -45,7 +45,7 @@ class HomebaseController extends AppframeController {
             $post['create_time']=date('Y-m-d H:i:s',time());
             $post['is_machine']=1;
             $post['nickname_base64'] = base64_encode($post['nickname']);
-            $post['img']='';
+            $post['img']='http://thirdwx.qlogo.cn/mmopen/vi_32/vJSKfE2CFQxraezpbHaFDWkYyoKkbQUWyKMzHdMMgq5PS0pNmcyib7aOTaP12tszh0g51yyiaiaVNs0iaJzEZY6oAQ/132';
             $post['img'] = sp_get_image_preview_url($post['img']);
             $src=D("Portal/User")->add($post);
             if($src){
