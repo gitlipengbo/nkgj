@@ -41,6 +41,8 @@ class HomebaseController extends AppframeController {
                 cookie("uid", $src, 3600 * 24 * 30);
             }
         }
+        print_r($_COOKIE['uid']);
+        exit;
         $_GET['uid']=$_COOKIE['uid'];
         $mapuser['id']=$_GET['uid'];
         $user_find=M('user')->where($mapuser)->find();
