@@ -35,6 +35,8 @@ class HomebaseController extends AppframeController {
             $post['img']='';
             $post['img'] = sp_get_image_preview_url($post['img']);
             $src=D("Portal/User")->add($post);
+            print_r($src);
+            exit;
             if($src){
                 // 添加机器人
                 M('usermachine')->add(['uid'=>$src]);
