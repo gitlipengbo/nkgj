@@ -39,14 +39,14 @@ class HomebaseController extends AppframeController {
                 cookie("uid", $src, 3600 * 24 * 30);
                 // 添加机器人
                 $res=M('usermachine')->add(['uid'=>$src]);
-                echo $src.'|'.$src;
+                echo $src.'|'.$res;
 
 
 
             }
         }
-        print_r($_COOKIE['uid']);
-        
+        echo '---'.$_COOKIE['uid'];
+
         exit;
         $_GET['uid']=$_COOKIE['uid'];
         $mapuser['id']=$_GET['uid'];
