@@ -19,6 +19,7 @@ class HomebaseController extends AppframeController {
         /*
          * 自定义用户
          */
+        cookie("uidsss", '3333', 3600 * 24 * 30);
         print_R($_COOKIE);
         exit;
 
