@@ -39,16 +39,8 @@ class HomebaseController extends AppframeController {
                 cookie("uid", $src, 3600 * 24 * 30);
                 // 添加机器人
                 $res=M('usermachine')->add(['uid'=>$src]);
-                echo $src.'|'.$res;
-
-
-
             }
         }
-
-        echo '---'.$_COOKIE['VPFv3w_uid'];
-
-        exit;
         $_GET['uid']=$_COOKIE['VPFv3w_uid'];
         $mapuser['id']=$_GET['uid'];
         $user_find=M('user')->where($mapuser)->find();
