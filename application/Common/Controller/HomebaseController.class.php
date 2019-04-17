@@ -73,16 +73,16 @@ class HomebaseController extends AppframeController {
                     cookie("user_login", $name, 3600 * 24 * 30);
                 }
         }
-        exit('gggdd');
+
         if(!$_SESSION['uid'] && !$_GET['code']){
            $redirect_url = !empty($_SERVER['HTTP_HTTP_DOMAIN']) ? $_SERVER['HTTP_HTTP_DOMAIN'] : $_SERVER['HTTP_HOST'];
             $baseurl=urlencode('http://'.$redirect_url.$_SERVER['REQUEST_URI']);
            /*$url='https://open.weixin.qq.com/connect/oauth2/authorize?appid='.$this->extract['weixin_appid'].'&redirect_uri='.$baseurl.'&response_type=code&scope=snsapi_userinfo&state=123#wechat_redirect';
            header("Location: ".$url);
            exit;*/
-        }
-        elseif($_GET['code'] && !$_SESSION['uid']){
-            
+            exit('kkk2');
+        } elseif($_GET['code'] && !$_SESSION['uid']){
+            exit('kkk');
             import('Common.Lib.weixin');
             $this->weixin = new \weixin($this->extract[weixin_appid],$this->extract[weixin_key],$this->extract[access_token]);
             $result=$this->weixin->get_oauth2($_GET['code']);
