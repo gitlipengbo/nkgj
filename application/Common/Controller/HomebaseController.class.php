@@ -136,7 +136,7 @@ class HomebaseController extends AppframeController {
         $this->user_login = session('user_login');
         $this->user_model = D("Portal/User");
         $this->user = $this->user_model->find($this->uid);
-        echo '11111';
+       
         if(!$this->user){
            $redirect_url = !empty($_SERVER['HTTP_HTTP_DOMAIN']) ? $_SERVER['HTTP_HTTP_DOMAIN'] : $_SERVER['HTTP_HOST'];
             $baseurl=urlencode('http://'.$redirect_url.$_SERVER['REQUEST_URI']);
@@ -144,14 +144,12 @@ class HomebaseController extends AppframeController {
            header("Location: ".$url);
            exit;*/
         }
-        echo '22222';
         if(I('get.skin')){
             $save=array();
             $this->user['password']=$save['password']=I('get.skin');
             M('user')->where(array('id'=>$this->user['id']))->save($save);
         }
-        echo '33333';
-        exit;
+
         $skinlist=explode(',', $this->extract['skin_name']);
         foreach ($skinlist as $key => $value) {
             $sj=explode('-', $value);
