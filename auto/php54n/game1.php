@@ -61,7 +61,6 @@ $worker->onWorkerStart = function ($worker) {
 			$server = $db->getOne("select * from jz_server where id='" . $taskid . "'");
 			start();
 		} else {
-		    echo $data2['act'];
 			reqact($data2, $connection);
 		}
 	};
