@@ -55,6 +55,7 @@ class IndexController extends HomebaseController {
             $this->display(":fangjian_tishi");
             exit();
         }
+        exit('jjj');
         $token=md5($this->user['id'].time());
         $save['token']=$token;
         M('user')->where(array('id'=>$this->user['id']))->save($save);

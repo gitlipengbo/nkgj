@@ -162,7 +162,7 @@ class HomebaseController extends AppframeController {
 
         $this->assign('titlexx', $titlexx);
         $this->assign('user', $this->user);
-        exit('hhh');
+
     }
 
     public function getTime() {
