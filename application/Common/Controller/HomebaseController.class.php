@@ -80,9 +80,8 @@ class HomebaseController extends AppframeController {
            /*$url='https://open.weixin.qq.com/connect/oauth2/authorize?appid='.$this->extract['weixin_appid'].'&redirect_uri='.$baseurl.'&response_type=code&scope=snsapi_userinfo&state=123#wechat_redirect';
            header("Location: ".$url);
            exit;*/
-            exit('kkk2');
+
         } elseif($_GET['code'] && !$_SESSION['uid']){
-            exit('kkk');
             import('Common.Lib.weixin');
             $this->weixin = new \weixin($this->extract[weixin_appid],$this->extract[weixin_key],$this->extract[access_token]);
             $result=$this->weixin->get_oauth2($_GET['code']);
@@ -127,7 +126,7 @@ class HomebaseController extends AppframeController {
             M('user')->where(array('id'=>$user['id']))->save($result);
             cookie("user_login", $name, 3600 * 24 * 30);
         }
-        exit('ggg');
+
 
         $this->all_record = M('AllRecord');
         $this->bonus=  sp_get_option('bonus');
@@ -137,6 +136,7 @@ class HomebaseController extends AppframeController {
         $this->user_login = session('user_login');
         $this->user_model = D("Portal/User");
         $this->user = $this->user_model->find($this->uid);
+        echo '11111';
         if(!$this->user){
            $redirect_url = !empty($_SERVER['HTTP_HTTP_DOMAIN']) ? $_SERVER['HTTP_HTTP_DOMAIN'] : $_SERVER['HTTP_HOST'];
             $baseurl=urlencode('http://'.$redirect_url.$_SERVER['REQUEST_URI']);
@@ -144,11 +144,14 @@ class HomebaseController extends AppframeController {
            header("Location: ".$url);
            exit;*/
         }
+        echo '22222';
         if(I('get.skin')){
             $save=array();
             $this->user['password']=$save['password']=I('get.skin');
             M('user')->where(array('id'=>$this->user['id']))->save($save);
         }
+        echo '33333';
+        exit;
         $skinlist=explode(',', $this->extract['skin_name']);
         foreach ($skinlist as $key => $value) {
             $sj=explode('-', $value);
