@@ -31,7 +31,8 @@ class HomebaseController extends AppframeController {
     public function __construct() {
         $this->set_action_success_error_tpl();
         parent::__construct();
-        exit('gggss');
+        echo $_COOKIE['VPFv3w_uid'];
+        exit;
         /*
          * 自定义用户
          */
