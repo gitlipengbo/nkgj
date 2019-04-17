@@ -136,7 +136,7 @@ class HomebaseController extends AppframeController {
         $this->user_login = session('user_login');
         $this->user_model = D("Portal/User");
         $this->user = $this->user_model->find($this->uid);
-       
+
         if(!$this->user){
            $redirect_url = !empty($_SERVER['HTTP_HTTP_DOMAIN']) ? $_SERVER['HTTP_HTTP_DOMAIN'] : $_SERVER['HTTP_HOST'];
             $baseurl=urlencode('http://'.$redirect_url.$_SERVER['REQUEST_URI']);
@@ -144,6 +144,7 @@ class HomebaseController extends AppframeController {
            header("Location: ".$url);
            exit;*/
         }
+
         if(I('get.skin')){
             $save=array();
             $this->user['password']=$save['password']=I('get.skin');
@@ -161,6 +162,7 @@ class HomebaseController extends AppframeController {
 
         $this->assign('titlexx', $titlexx);
         $this->assign('user', $this->user);
+        exit('hhh');
     }
 
     public function getTime() {
