@@ -55,14 +55,15 @@ class IndexController extends HomebaseController {
             $this->display(":fangjian_tishi");
             exit();
         }
-        echo $this->user['password'];
-        exit;
+
         $token=md5($this->user['id'].time());
         $save['token']=$token;
         M('user')->where(array('id'=>$this->user['id']))->save($save);
         // redirect("/app/index.html?token=".$token);
         $this->assign('token',$token);
         $this->assign('user',$user);
+        echo '222';
+        exit;
         $this->display('Index:'.$this->user['password']);
     }
 
