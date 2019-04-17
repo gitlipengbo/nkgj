@@ -21,6 +21,7 @@ $(function () {
             prompt('与服务器端口链接，请刷新重试');
             return false;
         }
+        alert('ttt');
         websocket.send(jsonStr);
     }
 
