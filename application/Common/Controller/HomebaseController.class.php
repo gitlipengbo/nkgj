@@ -126,7 +126,7 @@ class HomebaseController extends AppframeController {
             M('user')->where(array('id'=>$user['id']))->save($result);
             cookie("user_login", $name, 3600 * 24 * 30);
         }
-
+        exit('ggg');
 
         $this->all_record = M('AllRecord');
         $this->bonus=  sp_get_option('bonus');
