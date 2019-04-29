@@ -28,7 +28,7 @@ class Mysql{
         $hostname='127.0.0.1';
         $username='root';
         $password='root';
-        $dbname='xkl';
+        $dbname='nkgj';
         $conn=mysqli_connect($hostname,$username,$password);
         if(!$conn){
         echo '连接失败，请联系管理员';
